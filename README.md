@@ -24,8 +24,6 @@
 
 <br/>
 
-<div align="center">
-  <h3>📊 Github Stats</h3>
-  <img src="https://github-readme-stats.vercel.app/api?username=doublesilver&show_icons=true&theme=radical" height="150" alt="stats graph" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=doublesilver&layout=compact&theme=radical&langs_count=6" height="150" alt="languages graph" />
-</div>
+### 📊 GitHub 통계 (Stats)
+![stats graph](https://github-readme-stats-sigma-five.vercel.app/api?username=doublesilver&show_icons=true&theme=radical)
+![languages graph](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=doublesilver&layout=compact&theme=radical)
