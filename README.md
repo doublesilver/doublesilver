@@ -1,4 +1,4 @@
-### 안녕하세요, 비즈니스 가치를 기술로 실현하는 백엔드 개발자 **doublesilver**입니다. 👋
+### 안녕하세요, 개발자 **이은석**입니다. 👋
 
 [![Email](https://img.shields.io/badge/Email-korea5410@gmail.com-blue?logo=gmail&logoColor=white)](mailto:korea5410@gmail.com)
 
