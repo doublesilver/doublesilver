@@ -41,3 +41,14 @@
 ### 📊 GitHub 통계 (Stats)
 ![stats graph](https://github-readme-stats-sigma-five.vercel.app/api?username=doublesilver&show_icons=true&theme=radical)
 ![languages graph](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=doublesilver&layout=compact&theme=radical)
+
+<br/>
+
+### 🐍 Contribution Snake
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/doublesilver/doublesilver/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/doublesilver/doublesilver/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/doublesilver/doublesilver/output/github-contribution-grid-snake.svg">
+  </picture>
+</div>
