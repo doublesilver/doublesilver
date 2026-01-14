@@ -1,25 +1,37 @@
-### 안녕하세요, 백엔드 개발자 **doublesilver**입니다. 👋
+### 안녕하세요, 끊임없이 성장하는 백엔드 개발자 **doublesilver**입니다. 👋
 
-안정적이고 사용자 친화적인 서비스를 만드는 것을 좋아합니다.
-현재 **Node.js, Express, 그리고 시스템 아키텍처**에 집중하고 있습니다.
+안정적이고 효율적인 시스템 아키텍처를 설계하고 구현하는 것을 즐깁니다.
+현재 **Node.js, Python, 그리고 AI 서비스를 접목한 풀스택 개발**에 집중하고 있습니다.
 
 ---
 
-### 🚀 대표 프로젝트 (Featured Project)
-**[가기싫어 (gagisiro.com) - 출근길 익명 채팅방 🚇](https://github.com/doublesilver/subway-board)**
-> "가장 붐비는 시간, 가장 외로운 사람들"을 연결하는 **지하철 실시간 익명 채팅 서비스**
-- **역할**: 기획, 디자인, 풀스택 개발 및 배포 (1인 개발)
-- **기술 스택**: Node.js, Express, Socket.IO, PostgreSQL, Redis, React
-- **핵심 기능**:
-  - 수도권 지하철 9개 호선별 **실시간 채팅**
-  - **운영 시간 검증 시스템** (평일 07:00 ~ 09:00 접속 제한)
-  - **CI/CD 파이프라인** (Vercel & Railway 자동 배포)
+### � 주요 프로젝트 (Featured Projects)
+
+#### 1. [AI 기반 건물 유지보수 관리 시스템 (Maintenance App)](https://github.com/doublesilver/maintenance-app) 🏢
+> **"AI 분류와 비동기 큐를 도입한 스마트 건물 관리 플랫폼"**
+- **소개**: 민원 내용의 AI 자동 분류 및 Celery 큐를 활용한 고성능 처리 시스템
+- **Tech**: `Next.js` `FastAPI` `Llama 3 (AI)` `Celery` `Redis` `Docker` `AWS S3`
+
+#### 2. [가기싫어 (Gagisiro) - 지하철 익명 채팅](https://github.com/doublesilver/subway-board) 🚇
+> **"출근길(07~09시) 가장 붐비는 시간의 사람들을 연결하는 실시간 서비스"**
+- **소개**: 1호선~9호선별 실시간 채팅방과 운영 시간 자동 제어 시스템
+- **Tech**: `React` `Node.js` `Socket.IO` `Redis` `PostgreSQL` `Vercel` `Railway`
+
+#### 3. [AI Job Matcher](https://github.com/doublesilver/ai-job-matcher) 💼
+> **"채용 공고 수집부터 AI 분석까지, 데이터 파이프라인 구축"**
+- **소개**: Scrapy 크롤러와 Gemini API를 연동한 지능형 채용 공고 분석 REST API
+- **Tech**: `Python` `FastAPI` `Scrapy` `Google Gemini API` `SQLAlchemy` `JWT`
+
+#### 4. [Chatwoot Custom Guide](https://github.com/doublesilver/chatwoot-portfolio) 💬
+> **"오픈소스 CS 솔루션 Chatwoot의 Docker 기반 셀프 호스팅 가이드"**
+- **소개**: 복잡한 마이크로서비스 구조의 Chatwoot를 Docker Compose로 최적화하여 배포
+- **Tech**: `Docker Compose` `DevOps` `PostgreSQL` `Redis` `Sidekiq`
 
 ---
 
 ### 🛠️ 기술 스택 (Tech Stack)
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,nodejs,express,react,vite,postgres,linux,docker,git&perline=10" />
+  <img src="https://skillicons.dev/icons?i=js,ts,python,nodejs,express,fastapi,react,nextjs,postgres,redis,aws,docker,linux,git&perline=14" />
 </div>
 
 <br/>
