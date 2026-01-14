@@ -1,5 +1,7 @@
 ### 안녕하세요, 비즈니스 가치를 기술로 실현하는 백엔드 개발자 **doublesilver**입니다. 👋
 
+[![Email](https://img.shields.io/badge/Email-korea5410@gmail.com-blue?logo=gmail&logoColor=white)](mailto:korea5410@gmail.com)
+
 사용자의 불편함을 해소하기 위해 **안정적인 아키텍처를 설계**하는 것에 몰입합니다.<br/>
 **Node.js와 Python** 생태계를 모두 활용하며, **AI 서비스 통합 및 인프라 구축(DevOps)**까지 주도적으로 수행합니다.
 
