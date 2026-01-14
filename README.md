@@ -3,7 +3,7 @@
 [![Email](https://img.shields.io/badge/Email-korea5410@gmail.com-blue?logo=gmail&logoColor=white)](mailto:korea5410@gmail.com)
 
 사용자의 불편함을 해소하기 위해 **안정적인 아키텍처를 설계**하는 것에 몰입합니다.<br/>
-**Node.js와 Python** 생태계를 모두 활용하며, **AI 서비스 통합 및 인프라 구축(DevOps)**까지 주도적으로 수행합니다.
+**Node.js와 Python** 생태계를 모두 활용하며, **AI 서비스 통합 및 인프라 구축(DevOps)** 까지 주도적으로 수행합니다.
 
 ---
 
@@ -11,6 +11,7 @@
 
 #### 1. [가기싫어 (Gagisiro) - 지하철 익명 채팅](https://github.com/doublesilver/subway-board) 🚇
 > **"출근길(07~09시) 가장 붐비는 시간의 사람들을 연결하는 실시간 서비스"**
+- **Service**: [https://gagisiro.com](https://gagisiro.com)
 - **소개**: 1호선~9호선별 실시간 채팅방과 운영 시간 자동 제어 시스템
 - **Tech**: `React` `Node.js` `Socket.IO` `PostgreSQL` `Vercel` `Railway`
 
