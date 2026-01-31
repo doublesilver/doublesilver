@@ -13,7 +13,7 @@ AI 코딩 도구를 적극 활용하여 **프로덕션 레벨 프로젝트**를 
 > **"G2B API 크롤링 + Gemini AI 분석 + Raspberry Pi 배포"**
 
 **⚡ Built with AI-Powered Development**:  
-`Claude Code` + `MCP (Model Context Protocol)` + `Agent Orchestration`으로 **10일 만에 프로덕션 배포** 완료
+`Gemini pro` + `MCP (Model Context Protocol)` + `Agent Orchestration`으로 **10일 만에 프로덕션 배포** 완료
 
 - 🤖 **AI Skills**: Google Gemini 2.5 Flash, LangChain RAG, Prompt Engineering
 - 🏗️ **Tech**: FastAPI (Async/Await), PostgreSQL, Valkey, Taskiq, Docker
