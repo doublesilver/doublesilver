@@ -13,7 +13,7 @@ AI 코딩 도구를 적극 활용하여 **프로덕션 레벨 프로젝트**를 
 > **"G2B API 크롤링 + Gemini AI 분석 + Raspberry Pi 배포"**
 
 **⚡ Built with AI-Powered Development**:  
-`Gemini pro` + `MCP (Model Context Protocol)` + `Agent Orchestration`으로 **10일 만에 프로덕션 배포** 완료
+`Gemini Pro` + `Antigravity` + `Agent Orchestration`으로 **10일 만에 프로덕션 배포** 완료
 
 - 🤖 **AI Skills**: Google Gemini 2.5 Flash, LangChain RAG, Prompt Engineering
 - 🏗️ **Tech**: FastAPI (Async/Await), PostgreSQL, Valkey, Taskiq, Docker
@@ -51,9 +51,9 @@ AI 코딩 도구를 적극 활용하여 **프로덕션 레벨 프로젝트**를 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
 
 **AI & ML**  
-![Google Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat&logo=google&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Gemini_Pro-4285F4?style=flat&logo=google&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat)
-![Claude](https://img.shields.io/badge/Claude_Code-8E75B2?style=flat&logo=anthropic&logoColor=white)
+![Antigravity](https://img.shields.io/badge/Antigravity-8E75B2?style=flat&logo=google&logoColor=white)
 
 **Database & Infrastructure**  
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
@@ -62,7 +62,7 @@ AI 코딩 도구를 적극 활용하여 **프로덕션 레벨 프로젝트**를 
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
 
 **AI-Powered Development Tools**  
-- **Claude Code** (MCP Orchestration): Sisyphus, Oracle, Explore, Librarian Agents
+- **Gemini Pro + Antigravity** (Agent Orchestration): Advanced code generation and analysis
 - **Model Context Protocol (MCP)**: AST-grep, LSP, Multi-agent task delegation
 - **Vibe Coding**: 90% 코드 AI 생성 → Human 검증 및 최적화
 
@@ -71,8 +71,8 @@ AI 코딩 도구를 적극 활용하여 **프로덕션 레벨 프로젝트**를 
 ## 💡 Why My Projects Stand Out
 
 ### 1. **AI-Native Development**
-Claude Code의 **Sisyphus Agent** (Task Orchestration)를 활용하여:
-- **Parallel Agent Execution**: Explore (codebase), Librarian (docs), Oracle (architecture) 동시 실행
+Gemini Pro + Antigravity의 **Agent System**을 활용하여:
+- **Intelligent Code Generation**: 프로젝트 컨텍스트 기반 최적화된 코드 생성
 - **Context-Aware Coding**: MCP를 통한 LSP, AST-grep 기반 정확한 리팩토링
 - **Vibe Code**: AI 생성 코드 → 테스트 주도 검증 (100% test pass)
 
