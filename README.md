@@ -184,8 +184,24 @@ flowchart TB
 
 <div align="center">
 
-![stats](https://github-readme-stats.vercel.app/api?username=doublesilver&show_icons=true&theme=radical&include_all_commits=true&count_private=true)
-![langs](https://github-readme-stats.vercel.app/api/top-langs/?username=doublesilver&layout=compact&theme=radical&langs_count=6)
+<img src="https://github-readme-stats.vercel.app/api?username=doublesilver&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true" alt="GitHub Stats" height="165" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=doublesilver&layout=compact&theme=radical&langs_count=6&hide_border=true" alt="Top Languages" height="165" />
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=doublesilver&theme=radical&hide_border=true" alt="GitHub Streak" />
+
+</div>
+
+---
+
+## 🐍 Contribution Graph
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/doublesilver/doublesilver/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/doublesilver/doublesilver/output/github-contribution-grid-snake.svg" />
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/doublesilver/doublesilver/output/github-contribution-grid-snake.svg" />
+</picture>
 
 </div>
 
