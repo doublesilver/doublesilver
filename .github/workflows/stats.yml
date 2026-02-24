@@ -1,0 +1,21 @@
+name: Generate Profile Stats
+
+on:
+  schedule:
+    - cron: "30 0 * * *"  # 매일 00:30 UTC
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: vn7n24fono/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: doublesilver
+          BRANCH_NAME: output
+          OUTPUT_FOLDER: profile-summary-card-output
+          UTC_OFFSET: 9
