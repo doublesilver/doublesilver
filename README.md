@@ -1,6 +1,6 @@
 ### Hi, I'm Eunseok Lee 👋
 
-AI 코딩 도구를 적극 활용하여 **프로덕션 레벨 프로젝트**를 구축하는 개발자입니다.
+**프리랜서 풀스택 개발자** | AI 코딩 도구를 적극 활용하여 외주 프로젝트를 빠르고 정확하게 납품합니다.
 
 [![Email](https://img.shields.io/badge/Email-korea5410@gmail.com-blue?logo=gmail&logoColor=white)](mailto:korea5410@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live_Projects-green?logo=vercel&logoColor=white)](https://biz-retriever.vercel.app)
@@ -11,15 +11,15 @@ AI 코딩 도구를 적극 활용하여 **프로덕션 레벨 프로젝트**를 
 
 ### 📈 By the Numbers
 
-| 🧪 Tests | 🌐 Live Services | 📱 Platforms | ⚡ P95 Latency | 🛡️ Cache Hit Rate |
-|:---------:|:----------------:|:------------:|:--------------:|:-----------------:|
-| **1,720+** | **2** production | **3** (Web · Toss · Pi) | **< 80ms** | **98.6%** |
+|  🧪 Tests  | 🌐 Live Services |           📱 Platforms            | 🎨 Demo Projects | ⚡ P95 Latency |
+| :--------: | :--------------: | :-------------------------------: | :--------------: | :------------: |
+| **1,720+** | **3** production | **4** (Web · Toss · Pi · Android) |   **16** 데모    |   **< 80ms**   |
 
 </div>
 
 ---
 
-## 🚀 Live Projects
+## 🚀 Production Projects
 
 ### [Gagisiro (가기싫어)](https://github.com/doublesilver/subway-board) - 출근길 실시간 익명 채팅
 
@@ -31,19 +31,19 @@ AI 코딩 도구를 적극 활용하여 **프로덕션 레벨 프로젝트**를 
 - 🤖 **AI Filtering**: Local Regex + OpenAI Moderation API 하이브리드 콘텐츠 필터링
 - 📊 **Admin**: Recharts 대시보드, DAU/WAU/MAU 분석, 신고 관리, 커스텀 SQL 쿼리
 - 🏗️ **Tech**: React 19 + Vite 6, Express 5, TypeScript 100%, PostgreSQL, Redis, Socket.IO
-- 📱 **Apps in Toss**: 토스 미니앱 배포 지원, 인앱 광고 3종 (배너/전면/보상형), WebView UX 적응
+- 📱 **Apps in Toss**: 토스 미니앱 배포, 인앱 광고 3종 (배너/전면/보상형)
 - 🔧 **Infra**: Railway (Backend + DB + Redis), Vercel (Frontend), GitHub Actions CI/CD
 - ✅ **Quality**: 1,556 unit/integration tests + E2E 10 specs, 80%+ coverage, OWASP Top 10 대응
 
 <details>
 <summary><b>⚡ 성능 지표 (k6 부하 테스트)</b></summary>
 
-| 시나리오 | 동시 사용자 | 처리량 | P95 응답 |
-|---------|:---------:|:------:|:-------:|
-| Smoke | 1 | 0.73 req/s | 73ms |
-| Load | 50 | 9.87 req/s | 28ms |
-| **Stress** | **200** | **235 req/s** | **77ms** |
-| **Spike** | **200** | **363 req/s** | **81ms** |
+| 시나리오   | 동시 사용자 |    처리량     | P95 응답 |
+| ---------- | :---------: | :-----------: | :------: |
+| Smoke      |      1      |  0.73 req/s   |   73ms   |
+| Load       |     50      |  9.87 req/s   |   28ms   |
+| **Stress** |   **200**   | **235 req/s** | **77ms** |
+| **Spike**  |   **200**   | **363 req/s** | **81ms** |
 
 > 200명 동시접속 안정 처리 · Redis 캐시 히트율 98.64% · API 평균 응답 16~35ms
 
@@ -83,8 +83,6 @@ flowchart TB
     API -.->|Content Filter| OpenAI
 ```
 
-> 단일 코드베이스에서 `isAppsInToss()` 분기로 Web/Toss 동시 지원, 기존 웹 영향 제로
-
 </details>
 
 ---
@@ -93,90 +91,108 @@ flowchart TB
 
 > **10일 개발 → 164 tests (100%) · Gemini AI 분석 · Raspberry Pi 배포**
 
-**⚡ Built with AI-Powered Development**:
-`Gemini Pro` + `Antigravity` + `Agent Orchestration`으로 **10일 만에 프로덕션 배포** 완료
-
-- 🤖 **AI Skills**: Google Gemini 2.5 Flash, LangChain RAG, Prompt Engineering
+- 🤖 **AI**: Google Gemini 2.5 Flash, LangChain RAG, Prompt Engineering
 - 🏗️ **Tech**: FastAPI (Async/Await), PostgreSQL, Valkey, Taskiq, Docker
-- 🎨 **Frontend**: Vanilla JS (Payhera/Naver Design System)
 - 🔧 **DevOps**: Raspberry Pi + Tailscale, Prometheus + Grafana, HTTPS/SSL
 - ✅ **Quality**: 164 tests (100%), 85% coverage, 9,572건 공고 수집 검증
 
-**Live**:
-- Frontend: https://biz-retriever.vercel.app
-- Backend: https://leeeunseok.tail32c3e2.ts.net
+**Live**: [biz-retriever.vercel.app](https://biz-retriever.vercel.app)
 
 ---
 
-## ⚙️ How I Build — AI-Assisted Engineering Workflow
+### [Maintenance App](https://github.com/doublesilver/maintenance-app) - AI 스마트 건물 유지보수 플랫폼
 
-단순히 "AI로 코드를 짜는 것"이 아니라, **엔지니어링 프로세스에 AI를 통합**합니다.
+> **Next.js + FastAPI + OpenAI + Celery · 풀스택 SaaS**
 
-```
-1. PLAN    ─── AI Agent가 코드베이스 탐색 → 구현 전략 제안 → Human 검토/승인
-2. CODE    ─── Context-Aware 코드 생성 (MCP: LSP + AST-grep 기반 정확한 리팩토링)
-3. TEST    ─── AI 생성 코드 → 즉시 테스트 작성 → 1,720+ tests 자동 검증
-4. REVIEW  ─── Human이 보안/성능/아키텍처 최종 판단 → 머지
-5. DEPLOY  ─── CI/CD 파이프라인 자동 검증 → 멀티 플랫폼 배포
-```
-
-| 지표 | Gagisiro (12주) | Biz-Retriever (10일) |
-|------|:--------------:|:-------------------:|
-| 테스트 | 1,556 tests | 164 tests (100%) |
-| 커버리지 | 80%+ | 85% |
-| TypeScript/Python | 100% strict | 100% typed |
-| 프로덕션 배포 | Web + Toss 미니앱 | Web + Raspberry Pi |
+- 🏗️ **Tech**: Next.js + TypeScript + Tailwind (Frontend), FastAPI + Celery (Backend)
+- 🤖 **AI**: OpenAI API 기반 유지보수 요청 자동 분류/우선순위
+- 🔧 **Infra**: Redis, WebSocket 실시간 알림, Railway + Vercel 배포
 
 ---
 
-## 🛠️ Tech Stack & AI Tools
+### [인터넷공룡](https://github.com/doublesilver/internet-dinor) - 인터넷/TV 가입 비교 사이트
+
+> **Next.js 15 + React 19 + Supabase**
+
+- 🏗️ **Tech**: Next.js 15, React 19, Supabase (DB + Auth), Tailwind CSS
+- 🔧 **Infra**: Vercel 배포, seed/fallback 데이터 지원
+
+---
+
+### [Warehouse Scanner](https://github.com/doublesilver/scan-demo) - 물류창고 바코드 스캐너
+
+> **Android (Kotlin) + FastAPI (Python) · Zebra PDA 연동**
+
+- 📱 **Mobile**: Kotlin Android 앱, Zebra TC60 PDA 바코드 스캔
+- 🏗️ **Backend**: FastAPI + SQLite, NAS WebDAV 연동
+- 🔧 **Infra**: Mini PC 사내 서버 운영
+
+---
+
+## 🎨 Demo Portfolio — 16개 업종별 데모 프로젝트
+
+외주 상담 시 클라이언트에게 바로 보여줄 수 있는 **업종별 맞춤 데모** 모음입니다.
+
+| 카테고리        | 프로젝트                                                             | 설명                                 |
+| --------------- | -------------------------------------------------------------------- | ------------------------------------ |
+| **예약/매장**   | [demo-booking](https://github.com/doublesilver/demo-booking)         | 예약 관리 시스템                     |
+|                 | [demo-cafe](https://github.com/doublesilver/demo-cafe)               | 카페 소개 사이트                     |
+|                 | [demo-clinic](https://github.com/doublesilver/demo-clinic)           | 건강관리/의료 예약 플랫폼            |
+|                 | [demo-studio](https://github.com/doublesilver/demo-studio)           | 1인 스튜디오 포트폴리오·예약 사이트  |
+|                 | [demo-queue](https://github.com/doublesilver/demo-queue)             | 매장 대기열 관리 시스템              |
+| **커머스/유통** | [demo-catalog](https://github.com/doublesilver/demo-catalog)         | 상품 카탈로그 쇼핑 인터페이스        |
+|                 | [demo-inventory](https://github.com/doublesilver/demo-inventory)     | 재고 관리 대시보드                   |
+|                 | [demo-order](https://github.com/doublesilver/demo-order)             | 도매·유통 주문접수+배송 관리         |
+| **업무자동화**  | [demo-crm-lite](https://github.com/doublesilver/demo-crm-lite)       | 소상공인용 고객 메모·재방문 추적 CRM |
+|                 | [demo-hr](https://github.com/doublesilver/demo-hr)                   | 출퇴근·급여·연차 관리 시스템         |
+|                 | [demo-report-gen](https://github.com/doublesilver/demo-report-gen)   | 주간/월간 리포트 자동 생성           |
+|                 | [demo-receipt](https://github.com/doublesilver/demo-receipt)         | 영수증 OCR → 자동 경비 정리          |
+| **AI/데이터**   | [demo-chatbot](https://github.com/doublesilver/demo-chatbot)         | AI 고객 상담 자동화                  |
+|                 | [demo-review-ai](https://github.com/doublesilver/demo-review-ai)     | 리뷰 AI 감성분석 대시보드            |
+|                 | [demo-news-digest](https://github.com/doublesilver/demo-news-digest) | 산업별 뉴스 자동 수집·요약·슬랙 발송 |
+| **전문직**      | [demo-lawfirm](https://github.com/doublesilver/demo-lawfirm)         | 법률 사무소 상담 신청 사이트         |
+
+---
+
+## 🛠️ Tech Stack
 
 **Languages & Frameworks**
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![React](https://img.shields.io/badge/React_19-61DAFB?style=flat&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat&logo=next.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express_5-000000?style=flat&logo=express&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
 
 **AI & ML**
 ![Google Gemini](https://img.shields.io/badge/Gemini_Pro-4285F4?style=flat&logo=google&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude_Code-D97757?style=flat&logo=anthropic&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat)
-![Antigravity](https://img.shields.io/badge/Antigravity-8E75B2?style=flat&logo=google&logoColor=white)
 
 **Database & Infrastructure**
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
 ![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat&logo=railway&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
 
 ---
 
-## 💡 Why My Projects Stand Out
+## ⚙️ How I Build — AI-Assisted Engineering Workflow
 
-### 1. **Production-First Mindset**
-"작동하는 것"이 아닌 **"운영 가능한 것"** 중심 개발:
-- **보안**: OWASP Top 10, Helmet CSP, HMAC-SHA256 인증, Rate Limiting
-- **관측성**: Prometheus + Grafana 모니터링, 구조화 로깅 (Winston)
-- **가용성**: Redis Fail-Safe (장애 시 DB 자동 fallback), Health Check 엔드포인트
-- **백업**: pg_dump + cron 자동 백업, DDoS 방어 (fail2ban)
-
-### 2. **Multi-Platform, Single Codebase**
-하나의 코드베이스에서 **3개 플랫폼** 동시 배포:
-- **Web**: Vercel (SPA) + Railway (API) — gagisiro.com
-- **Apps in Toss**: 토스 미니앱 (.ait), `isAppsInToss()` 조건부 분기로 기존 웹 영향 제로
-- **Self-Hosting**: Raspberry Pi + Tailscale Funnel — biz-retriever
-
-### 3. **Measurable Quality**
-감이 아닌 **수치**로 증명:
-- 1,720+ 테스트, 80%+ 커버리지 across all projects
-- k6 부하 테스트: 200명 동시접속, P95 < 80ms
-- Redis 캐시 히트율 98.6%, API 평균 응답 16~35ms
+```
+1. PLAN    ─── AI Agent가 코드베이스 탐색 → 구현 전략 제안 → Human 검토/승인
+2. CODE    ─── Context-Aware 코드 생성 (MCP: LSP + AST-grep 기반 리팩토링)
+3. TEST    ─── AI 생성 코드 → 즉시 테스트 작성 → 1,720+ tests 자동 검증
+4. REVIEW  ─── Human이 보안/성능/아키텍처 최종 판단 → 머지
+5. DEPLOY  ─── CI/CD 파이프라인 자동 검증 → 멀티 플랫폼 배포
+```
 
 ---
 
@@ -205,6 +221,6 @@ flowchart TB
 
 ---
 
-**Last Updated**: 2026-02-24
-**Current Focus**: AI 코딩 워크플로우 최적화 및 멀티 플랫폼 배포 경험 확장
-**Open to**: Full-Stack / Backend / AI Engineer 포지션
+**Last Updated**: 2026-03-22
+**Current Focus**: 외주 프로젝트 납품 + 업종별 데모 포트폴리오 확장
+**Open to**: Full-Stack / Backend / AI Engineer 외주 및 포지션
