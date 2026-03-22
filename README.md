@@ -1,9 +1,9 @@
-### Hi, I'm Eunseok Lee 👋
+# Hi, I'm Eunseok Lee 👋
 
 **프리랜서 풀스택 개발자** | AI 코딩 도구를 적극 활용하여 외주 프로젝트를 빠르고 정확하게 납품합니다.
 
 [![Email](https://img.shields.io/badge/Email-korea5410@gmail.com-blue?logo=gmail&logoColor=white)](mailto:korea5410@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Projects-green?logo=vercel&logoColor=white)](https://biz-retriever.vercel.app)
+[![Biz-Retriever](https://img.shields.io/badge/Biz--Retriever-Demo-green?logo=vercel&logoColor=white)](https://biz-retriever.vercel.app)
 
 ---
 
@@ -11,9 +11,9 @@
 
 ### 📈 By the Numbers
 
-|  🧪 Tests  | 🌐 Live Services |           📱 Platforms            | 🎨 Demo Projects | ⚡ P95 Latency |
-| :--------: | :--------------: | :-------------------------------: | :--------------: | :------------: |
-| **1,720+** | **3** production | **4** (Web · Toss · Pi · Android) |   **16** 데모    |   **< 80ms**   |
+|  🧪 Tests  |   🚀 Projects    |         📱 Platforms         | 🎨 Demo Projects | ⚡ P95 Latency |
+| :--------: | :--------------: | :--------------------------: | :--------------: | :------------: |
+| **1,720+** | **5** production | **3** (Web · Toss · Android) |   **16** 데모    |   **~80ms**    |
 
 </div>
 
@@ -224,3 +224,5 @@ flowchart TB
 **Last Updated**: 2026-03-22
 **Current Focus**: 외주 프로젝트 납품 + 업종별 데모 포트폴리오 확장
 **Open to**: Full-Stack / Backend / AI Engineer 외주 및 포지션
+
+📬 **외주 문의**: [korea5410@gmail.com](mailto:korea5410@gmail.com)
