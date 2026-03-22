@@ -13,7 +13,7 @@
 
 |  🧪 Tests  |   🚀 Projects    |         📱 Platforms         | 🎨 Demo Projects | ⚡ P95 Latency |
 | :--------: | :--------------: | :--------------------------: | :--------------: | :------------: |
-| **1,720+** | **5** production | **3** (Web · Toss · Android) |   **16** 데모    |   **~80ms**    |
+| **2,016+** | **8** production | **3** (Web · Toss · Android) |   **16** 데모    |   **~80ms**    |
 
 </div>
 
@@ -102,20 +102,28 @@ flowchart TB
 
 ### [Maintenance App](https://github.com/doublesilver/maintenance-app) - AI 스마트 건물 유지보수 플랫폼
 
-> **Next.js + FastAPI + OpenAI + Celery · 풀스택 SaaS**
+> **48시간 개발 → Groq Llama-3 AI 분류 · 비동기 작업 큐 · 풀스택 SaaS**
 
-- 🏗️ **Tech**: Next.js + TypeScript + Tailwind (Frontend), FastAPI + Celery (Backend)
-- 🤖 **AI**: OpenAI API 기반 유지보수 요청 자동 분류/우선순위
-- 🔧 **Infra**: Redis, WebSocket 실시간 알림, Railway + Vercel 배포
+- 🤖 **AI**: Groq Llama-3 기반 민원 자동 분류/우선순위 산정 (OpenAI 대비 4.6배 빠름)
+- 🏗️ **Tech**: Next.js 14 + Tailwind (Frontend), FastAPI + Celery + Redis (Backend)
+- ⚡ **Performance**: Celery 비동기 처리로 응답 2.5s → 0.1s (25배 개선), 동시 처리량 98 req/s
+- 🔐 **Security**: JWT 인증, RBAC, Rate Limiting
+- 🔧 **Infra**: Railway (Backend), Vercel (Frontend), S3 이미지 업로드
+
+**Live**: [maintenance-app-azure.vercel.app](https://maintenance-app-azure.vercel.app) · [API Docs](https://maintenance-app-production-9c47.up.railway.app/docs)
 
 ---
 
 ### [인터넷공룡](https://github.com/doublesilver/internet-dinor) - 인터넷/TV 가입 비교 사이트
 
-> **Next.js 15 + React 19 + Supabase**
+> **Next.js 15 + React 19 + Supabase · 통신사 요금제 비교 서비스**
 
-- 🏗️ **Tech**: Next.js 15, React 19, Supabase (DB + Auth), Tailwind CSS
-- 🔧 **Infra**: Vercel 배포, seed/fallback 데이터 지원
+- 🏗️ **Tech**: Next.js 15, React 19, Supabase (DB + Auth), Tailwind CSS, Zod
+- 📊 **Features**: 통신사별 요금제 비교, 가격 계산기, 상담 신청 폼
+- 👨‍💼 **Admin**: 미들웨어 기반 관리자 페이지, 관리자 API
+- 🔧 **Infra**: Vercel 배포, Firebase Studio/IDX 지원
+
+**Live**: [internetdinor.vercel.app](https://internetdinor.vercel.app)
 
 ---
 
@@ -129,28 +137,59 @@ flowchart TB
 
 ---
 
+### [OddParty](https://github.com/doublesilver/oddparty-site) - 소셜 파티 신청 플랫폼
+
+> **프레임워크 제로 풀스택 · 296 tests · 100% coverage**
+
+- 🏗️ **Tech**: Vanilla HTML/CSS/JS (Frontend), Python stdlib http.server (Backend), SQLite/PostgreSQL
+- 🔐 **Security**: JWT 인증, WYSIWYG 관리자 대시보드
+- ✅ **Quality**: 296 tests, 100% 코드 커버리지
+- 🔧 **Infra**: Vercel (Frontend) + Railway (Backend)
+
+---
+
+### [Knowledge Copilot](https://github.com/doublesilver/knowledge-copilot) - AI 문서 질의/요약 플랫폼
+
+> **RAG 기반 문서 검색 · Next.js 14 + FastAPI**
+
+- 🤖 **AI**: OpenAI Embedding + RAG 파이프라인, 문서 질의/요약
+- 🏗️ **Tech**: Next.js 14 (Frontend), FastAPI + Python 3.12 (Backend), SQLite
+- 🔧 **Infra**: Vercel + Railway, GitHub Actions CI/CD
+
+---
+
+### [S Partners Landing](https://github.com/doublesilver/s-partners-landing) - 소상공인 정책자금 상담 랜딩
+
+> **모바일 우선 반응형 · FormSubmit 연동**
+
+- 🏗️ **Tech**: HTML5, CSS3, Vanilla JS
+- 📱 **UX**: 모바일 우선 반응형, 신뢰감 중심 UI
+- 🔧 **Infra**: Vercel 배포, FormSubmit 이메일 연동
+
+---
+
 ## 🎨 Demo Portfolio — 16개 업종별 데모 프로젝트
 
 외주 상담 시 클라이언트에게 바로 보여줄 수 있는 **업종별 맞춤 데모** 모음입니다.
 
-| 카테고리        | 프로젝트                                                             | 설명                                 |
-| --------------- | -------------------------------------------------------------------- | ------------------------------------ |
-| **예약/매장**   | [demo-booking](https://github.com/doublesilver/demo-booking)         | 예약 관리 시스템                     |
-|                 | [demo-cafe](https://github.com/doublesilver/demo-cafe)               | 카페 소개 사이트                     |
-|                 | [demo-clinic](https://github.com/doublesilver/demo-clinic)           | 건강관리/의료 예약 플랫폼            |
-|                 | [demo-studio](https://github.com/doublesilver/demo-studio)           | 1인 스튜디오 포트폴리오·예약 사이트  |
-|                 | [demo-queue](https://github.com/doublesilver/demo-queue)             | 매장 대기열 관리 시스템              |
-| **커머스/유통** | [demo-catalog](https://github.com/doublesilver/demo-catalog)         | 상품 카탈로그 쇼핑 인터페이스        |
-|                 | [demo-inventory](https://github.com/doublesilver/demo-inventory)     | 재고 관리 대시보드                   |
-|                 | [demo-order](https://github.com/doublesilver/demo-order)             | 도매·유통 주문접수+배송 관리         |
-| **업무자동화**  | [demo-crm-lite](https://github.com/doublesilver/demo-crm-lite)       | 소상공인용 고객 메모·재방문 추적 CRM |
-|                 | [demo-hr](https://github.com/doublesilver/demo-hr)                   | 출퇴근·급여·연차 관리 시스템         |
-|                 | [demo-report-gen](https://github.com/doublesilver/demo-report-gen)   | 주간/월간 리포트 자동 생성           |
-|                 | [demo-receipt](https://github.com/doublesilver/demo-receipt)         | 영수증 OCR → 자동 경비 정리          |
-| **AI/데이터**   | [demo-chatbot](https://github.com/doublesilver/demo-chatbot)         | AI 고객 상담 자동화                  |
-|                 | [demo-review-ai](https://github.com/doublesilver/demo-review-ai)     | 리뷰 AI 감성분석 대시보드            |
-|                 | [demo-news-digest](https://github.com/doublesilver/demo-news-digest) | 산업별 뉴스 자동 수집·요약·슬랙 발송 |
-| **전문직**      | [demo-lawfirm](https://github.com/doublesilver/demo-lawfirm)         | 법률 사무소 상담 신청 사이트         |
+| 카테고리        | 프로젝트                                                             | 설명                            |                           Live                           |
+| --------------- | -------------------------------------------------------------------- | ------------------------------- | :------------------------------------------------------: |
+| **예약/매장**   | [demo-booking](https://github.com/doublesilver/demo-booking)         | 예약 관리 시스템                |   [Demo](https://doublesilver.github.io/demo-booking/)   |
+|                 | [demo-cafe](https://github.com/doublesilver/demo-cafe)               | 카페 소개 사이트                |    [Demo](https://doublesilver.github.io/demo-cafe/)     |
+|                 | [demo-clinic](https://github.com/doublesilver/demo-clinic)           | 건강관리/의료 예약 플랫폼       |   [Demo](https://doublesilver.github.io/demo-clinic/)    |
+|                 | [demo-studio](https://github.com/doublesilver/demo-studio)           | 1인 스튜디오 포트폴리오·예약    |   [Demo](https://doublesilver.github.io/demo-studio/)    |
+|                 | [demo-queue](https://github.com/doublesilver/demo-queue)             | 매장 대기열 관리 시스템         |    [Demo](https://doublesilver.github.io/demo-queue/)    |
+| **커머스/유통** | [demo-catalog](https://github.com/doublesilver/demo-catalog)         | 상품 카탈로그 쇼핑 인터페이스   |   [Demo](https://doublesilver.github.io/demo-catalog/)   |
+|                 | [demo-inventory](https://github.com/doublesilver/demo-inventory)     | 재고 관리 대시보드              |  [Demo](https://doublesilver.github.io/demo-inventory/)  |
+|                 | [demo-order](https://github.com/doublesilver/demo-order)             | 도매·유통 주문접수+배송 관리    |    [Demo](https://doublesilver.github.io/demo-order/)    |
+| **업무자동화**  | [demo-crm-lite](https://github.com/doublesilver/demo-crm-lite)       | 소상공인용 고객 메모·재방문 CRM |  [Demo](https://doublesilver.github.io/demo-crm-lite/)   |
+|                 | [demo-hr](https://github.com/doublesilver/demo-hr)                   | 출퇴근·급여·연차 관리 시스템    |     [Demo](https://doublesilver.github.io/demo-hr/)      |
+|                 | [demo-report-gen](https://github.com/doublesilver/demo-report-gen)   | 주간/월간 리포트 자동 생성      | [Demo](https://doublesilver.github.io/demo-report-gen/)  |
+|                 | [demo-receipt](https://github.com/doublesilver/demo-receipt)         | 영수증 OCR → 자동 경비 정리     |   [Demo](https://doublesilver.github.io/demo-receipt/)   |
+| **AI/데이터**   | [demo-chatbot](https://github.com/doublesilver/demo-chatbot)         | AI 고객 상담 자동화             |   [Demo](https://doublesilver.github.io/demo-chatbot/)   |
+|                 | [demo-review-ai](https://github.com/doublesilver/demo-review-ai)     | 리뷰 AI 감성분석 대시보드       |  [Demo](https://doublesilver.github.io/demo-review-ai/)  |
+|                 | [demo-news-digest](https://github.com/doublesilver/demo-news-digest) | 뉴스 자동 수집·요약·슬랙 발송   | [Demo](https://doublesilver.github.io/demo-news-digest/) |
+| **전문직**      | [demo-lawfirm](https://github.com/doublesilver/demo-lawfirm)         | 법률 사무소 상담 신청 사이트    |   [Demo](https://doublesilver.github.io/demo-lawfirm/)   |
 
 ---
 
@@ -176,11 +215,16 @@ flowchart TB
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Celery](https://img.shields.io/badge/Celery-37814A?style=flat&logo=celery&logoColor=white)
+![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=flat&logo=socket.io&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
 ![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat&logo=railway&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
 
 ---
 
@@ -189,7 +233,7 @@ flowchart TB
 ```
 1. PLAN    ─── AI Agent가 코드베이스 탐색 → 구현 전략 제안 → Human 검토/승인
 2. CODE    ─── Context-Aware 코드 생성 (MCP: LSP + AST-grep 기반 리팩토링)
-3. TEST    ─── AI 생성 코드 → 즉시 테스트 작성 → 1,720+ tests 자동 검증
+3. TEST    ─── AI 생성 코드 → 즉시 테스트 작성 → 2,016+ tests 자동 검증
 4. REVIEW  ─── Human이 보안/성능/아키텍처 최종 판단 → 머지
 5. DEPLOY  ─── CI/CD 파이프라인 자동 검증 → 멀티 플랫폼 배포
 ```
@@ -221,7 +265,8 @@ flowchart TB
 
 ---
 
-**Last Updated**: 2026-03-22
+<!-- Last Updated 자동 갱신: .github/workflows/update-readme.yml -->
+
 **Current Focus**: 외주 프로젝트 납품 + 업종별 데모 포트폴리오 확장
 **Open to**: Full-Stack / Backend / AI Engineer 외주 및 포지션
 
