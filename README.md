@@ -265,7 +265,7 @@ flowchart TB
 
 ---
 
-<!-- Last Updated 자동 갱신: 2026-03-23 -->
+<!-- Last Updated 자동 갱신: 2026-03-30 -->
 
 **Current Focus**: 외주 프로젝트 납품 + 업종별 데모 포트폴리오 확장
 **Open to**: Full-Stack / Backend / AI Engineer 외주 및 포지션
