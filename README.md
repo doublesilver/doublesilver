@@ -13,7 +13,7 @@
 
 |  🧪 Tests  |   🚀 Projects    |         📱 Platforms         | 🎨 Demo Projects | ⚡ P95 Latency |
 | :--------: | :--------------: | :--------------------------: | :--------------: | :------------: |
-| **2,016+** | **8** production | **3** (Web · Toss · Android) |   **16** 데모    |   **~80ms**    |
+| **2,080+** | **9** production | **3** (Web · Toss · Android) |   **16** 데모    |   **~80ms**    |
 
 </div>
 
@@ -127,13 +127,15 @@ flowchart TB
 
 ---
 
-### [Warehouse Scanner](https://github.com/doublesilver/scan-demo) - 물류창고 바코드 스캐너
+### [Scan](https://github.com/doublesilver/scan) - 물류창고 바코드 스캐너
 
-> **Android (Kotlin) + FastAPI (Python) · Zebra PDA 연동**
+> **64 tests · Android PDA(Zebra TC60) + FastAPI + SQLite + 웹 도면 에디터**
 
-- 📱 **Mobile**: Kotlin Android 앱, Zebra TC60 PDA 바코드 스캔
-- 🏗️ **Backend**: FastAPI + SQLite, NAS WebDAV 연동
-- 🔧 **Infra**: Mini PC 사내 서버 운영
+- 📱 **Mobile**: Kotlin Android 앱, Zebra TC60 PDA 바코드 스캔, MVVM + Retrofit2
+- 🗺️ **Web Editor**: 웹 기반 창고 도면 에디터 (셀 크기·텍스트·테두리 설정, 영역 관리)
+- 🏗️ **Backend**: FastAPI + aiosqlite, NAS WebDAV 연동, 도면 API 책임 분리
+- 🔧 **Infra**: Zebra 전용 Mini PC 사내 서버, EAN-13 스캔→조회 0.3~0.5s
+- ✅ **Quality**: 64 tests, 상품 데이터 보호, 프로덕션 하드웨어 무중단 운영
 
 ---
 
@@ -233,7 +235,7 @@ flowchart TB
 ```
 1. PLAN    ─── AI Agent가 코드베이스 탐색 → 구현 전략 제안 → Human 검토/승인
 2. CODE    ─── Context-Aware 코드 생성 (MCP: LSP + AST-grep 기반 리팩토링)
-3. TEST    ─── AI 생성 코드 → 즉시 테스트 작성 → 2,016+ tests 자동 검증
+3. TEST    ─── AI 생성 코드 → 즉시 테스트 작성 → 2,080+ tests 자동 검증
 4. REVIEW  ─── Human이 보안/성능/아키텍처 최종 판단 → 머지
 5. DEPLOY  ─── CI/CD 파이프라인 자동 검증 → 멀티 플랫폼 배포
 ```
@@ -265,7 +267,7 @@ flowchart TB
 
 ---
 
-<!-- Last Updated 자동 갱신: 2026-04-06 -->
+<!-- Last Updated 자동 갱신: 2026-04-10 -->
 
 **Current Focus**: 외주 프로젝트 납품 + 업종별 데모 포트폴리오 확장
 **Open to**: Full-Stack / Backend / AI Engineer 외주 및 포지션
