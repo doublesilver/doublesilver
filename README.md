@@ -24,22 +24,61 @@
 
 ## 🌟 Featured
 
-<div align="center">
+<table>
+<tr>
+<td width="50%" valign="top">
 
-<a href="https://github.com/doublesilver/agora">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=doublesilver&repo=agora&theme=tokyonight&show_owner=true" alt="Agora" />
-</a>
-<a href="https://github.com/doublesilver/subway-board">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=doublesilver&repo=subway-board&theme=tokyonight&show_owner=true" alt="Subway Board" />
-</a>
-<a href="https://github.com/doublesilver/biz-retriever">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=doublesilver&repo=biz-retriever&theme=tokyonight&show_owner=true" alt="Biz-Retriever" />
-</a>
-<a href="https://github.com/doublesilver/maintenance-app">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=doublesilver&repo=maintenance-app&theme=tokyonight&show_owner=true" alt="Maintenance App" />
-</a>
+### 🤖 [Agora](https://github.com/doublesilver/agora)
+**Multi-AI debate · human-in-the-loop**
 
-</div>
+Claude · GPT · Gemini 직렬 라운드 + 사용자 인터럽트.
+2개 AbortController 분리 설계 · Anthropic prompt caching.
+
+`Next.js 16` · `TypeScript strict` · `SSE` · `vitest 26`
+
+🔗 [Live](https://agora-production-17a6.up.railway.app) · [ARCHITECTURE](https://github.com/doublesilver/agora/blob/main/ARCHITECTURE.md)
+
+</td>
+<td width="50%" valign="top">
+
+### 🚇 [Gagisiro](https://github.com/doublesilver/subway-board)
+**출근길 실시간 익명 채팅 · 운영 중**
+
+평일 07:00~09:00 · k6 부하 테스트 P95 77ms (200 동시) · Apps in Toss 미니앱.
+
+`React 19` · `Express 5` · `Socket.IO` · `1,900+ tests`
+
+🔗 [Live](https://gagisiro.com) · [Toss 미니앱](https://toss.im)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🐕 [Biz-Retriever](https://github.com/doublesilver/biz-retriever)
+**AI 입찰 공고 분석 · Raspberry Pi 자체 호스팅**
+
+Gemini 2.5 Flash + LangChain RAG · Tailscale 사내 망 · 9,572건 공고 수집 검증.
+
+`FastAPI` · `Gemini 2.5` · `340+ tests` · `95% coverage`
+
+🔗 [Live](https://biz-retriever.vercel.app)
+
+</td>
+<td width="50%" valign="top">
+
+### 🏢 [Maintenance App](https://github.com/doublesilver/maintenance-app)
+**AI 건물 유지보수 SaaS**
+
+Groq Llama-3 분류 · Celery 비동기 큐 · S3 이미지 업로드 · JWT + RBAC.
+
+`Next.js 14` · `FastAPI` · `Groq` · `Celery 5.4`
+
+🔗 [Live](https://maintenance-app-azure.vercel.app) · [API Docs](https://maintenance-app-production-9c47.up.railway.app/docs)
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -47,15 +86,35 @@
 
 <div align="center">
 
+**Languages & Frameworks**
+
 <img src="https://skillicons.dev/icons?i=typescript,python,kotlin,javascript,nextjs,react,vite,express,fastapi&perline=9" alt="Languages & Frameworks" />
-<br/>
-<img src="https://skillicons.dev/icons?i=anthropic,openai,supabase,postgres,redis,sqlite,docker,nginx&perline=8" alt="AI · DB · Infra" />
-<br/>
-<img src="https://skillicons.dev/icons?i=tailwind,prometheus,grafana,githubactions,vercel,railway,linux,bash&perline=8" alt="Frontend · Observability · Deploy" />
+
+**Database & Infra**
+
+<img src="https://skillicons.dev/icons?i=postgres,redis,sqlite,supabase,docker,nginx,vercel,linux&perline=8" alt="DB & Infra" />
+
+**Frontend · Observability**
+
+<img src="https://skillicons.dev/icons?i=tailwind,prometheus,grafana,githubactions,bash&perline=5" alt="Frontend · Observability" />
+
+**AI / LLM Providers**
+
+[![Anthropic](https://img.shields.io/badge/Anthropic_Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)](https://www.anthropic.com)
+[![OpenAI](https://img.shields.io/badge/OpenAI_GPT-412991?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com)
+[![Gemini](https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=googlegemini&logoColor=white)](https://gemini.google.com)
+[![Groq](https://img.shields.io/badge/Groq_Llama--3-F55036?style=for-the-badge&logo=meta&logoColor=white)](https://groq.com)
+[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white)](https://langchain.com)
+
+**Cloud Hosting**
+
+[![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)](https://railway.app)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
+[![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
 
 </div>
 
-> **AI Agents** in daily workflow: Claude Code · OpenAI Codex · Gemini CLI · LangChain · Anthropic prompt caching
+> **AI Agents** in daily workflow: Claude Code · OpenAI Codex · Gemini CLI
 
 ---
 
@@ -226,12 +285,7 @@ flowchart LR
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=doublesilver&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&show_icons=true" alt="GitHub Stats" />
-<img height="180" src="https://github-readme-streak-stats.herokuapp.com?user=doublesilver&theme=tokyonight&hide_border=true" alt="Streak" />
-
-<br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=doublesilver&theme=tokyonight&hide_border=true&layout=compact&langs_count=8" alt="Top Languages" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=doublesilver&theme=tokyonight&hide_border=true" alt="Streak" />
 
 <br/><br/>
 
