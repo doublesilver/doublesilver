@@ -3,6 +3,7 @@
 **프리랜서 풀스택 개발자** | AI 코딩 도구를 적극 활용하여 외주 프로젝트를 빠르고 정확하게 납품합니다.
 
 [![Email](https://img.shields.io/badge/Email-korea5410@gmail.com-blue?logo=gmail&logoColor=white)](mailto:korea5410@gmail.com)
+[![Agora](https://img.shields.io/badge/Agora-Live-FF6F61?logo=railway&logoColor=white)](https://agora-production-17a6.up.railway.app)
 [![Biz-Retriever](https://img.shields.io/badge/Biz--Retriever-Demo-green?logo=vercel&logoColor=white)](https://biz-retriever.vercel.app)
 
 ---
@@ -13,7 +14,7 @@
 
 |  🧪 Tests  |   🚀 Projects    |         📱 Platforms         | 🎨 Demo Projects | ⚡ P95 Latency |
 | :--------: | :--------------: | :--------------------------: | :--------------: | :------------: |
-| **2,080+** | **9** production | **3** (Web · Toss · Android) |   **16** 데모    |   **~80ms**    |
+| **2,080+** | **10** production | **3** (Web · Toss · Android) |   **16** 데모    |   **~80ms**    |
 
 </div>
 
@@ -84,6 +85,22 @@ flowchart TB
 ```
 
 </details>
+
+---
+
+### [Agora](https://github.com/doublesilver/agora) - Multi-AI Debate Tool with Human-in-the-Loop
+
+> **Claude · GPT · Gemini 직렬 라운드 토론 + 사용자 인터럽트 · Next.js 16 strict TS**
+
+- 🤖 **AI**: Anthropic SDK + OpenAI SDK + Google GenAI, Anthropic prompt caching 적용 (cache_control 2-block)
+- 🎭 **Pattern**: 2개 AbortController 분리 (`roundAbort` vs `sessionAbort`) → 인터럽트로 라운드만 끊고 세션은 살림 + 사용자 의견 반영 후 자동 재시작
+- 🔐 **Security**: BYOK (sessionStorage only, 서버 디스크 미저장), JSONL 시크릿 자동 검증 (`scrub-check.sh`)
+- ✅ **Quality**: TypeScript strict 0 errors, 4 vitest files / 26 tests, 9-scenario regression (interrupt · timeout · budget · time)
+- 🏗️ **Tech**: Next.js 16 (App Router) + Tailwind v4, SSE token streaming, Docker standalone, AbortSignal.any 합성
+- 🔧 **Infra**: Railway (containerized), 단일 사용자 데모 가정
+
+**Live**: [agora-production-17a6.up.railway.app](https://agora-production-17a6.up.railway.app)
+**Docs**: [README](https://github.com/doublesilver/agora) · [ARCHITECTURE](https://github.com/doublesilver/agora/blob/main/ARCHITECTURE.md) · [AGENTS](https://github.com/doublesilver/agora/blob/main/AGENTS.md)
 
 ---
 
@@ -267,7 +284,7 @@ flowchart TB
 
 ---
 
-<!-- Last Updated 자동 갱신: 2026-05-04 -->
+<!-- Last Updated 자동 갱신: 2026-05-09 -->
 
 **Current Focus**: 외주 프로젝트 납품 + 업종별 데모 포트폴리오 확장
 **Open to**: Full-Stack / Backend / AI Engineer 외주 및 포지션
