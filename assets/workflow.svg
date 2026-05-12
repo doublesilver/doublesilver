@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200" font-family="&#39;JetBrains Mono&#39;, ui-monospace, monospace">
+  <rect width="900" height="200" rx="10" fill="#0f0f0f"></rect>
+  <rect x="0.5" y="0.5" width="899" height="199" rx="9.5" fill="none" stroke="#1f1f1f"></rect>
+  
+  <text x="24" y="32" font-size="11" fill="#6b6b6b">// AI-ASSISTED ENGINEERING WORKFLOW</text>
+  
+  
+    <g transform="translate(30, 56)">
+      <rect width="156" height="128" rx="6" fill="#141414" stroke="#2a2a2a"></rect>
+      <text x="14" y="22" font-size="10" fill="#6b6b6b">01</text>
+      <text x="14" y="50" font-size="16" font-weight="700" fill="#e5e5e5" letter-spacing="1">PLAN</text>
+      <line x1="14" y1="62" x2="40" y2="62" stroke="#4ade80" stroke-width="2"></line>
+      <text x="14" y="88" font-size="11" fill="#a3a3a3" font-family="&#39;Pretendard&#39;, sans-serif">AI 기획문서</text>
+      <text x="14" y="106" font-size="10.5" fill="#6b6b6b">SoT CLAUDE.md</text>
+    </g>
+    
+    <line x1="186" y1="120" x2="196" y2="120" stroke="#6b6b6b" stroke-width="1"></line>
+    <polygon points="196,116 202,120 196,124" fill="#6b6b6b"></polygon>
+    <g transform="translate(196, 56)">
+      <rect width="156" height="128" rx="6" fill="#141414" stroke="#2a2a2a"></rect>
+      <text x="14" y="22" font-size="10" fill="#6b6b6b">02</text>
+      <text x="14" y="50" font-size="16" font-weight="700" fill="#e5e5e5" letter-spacing="1">CODE</text>
+      <line x1="14" y1="62" x2="40" y2="62" stroke="#4ade80" stroke-width="2"></line>
+      <text x="14" y="88" font-size="11" fill="#a3a3a3" font-family="&#39;Pretendard&#39;, sans-serif">Context-Aware</text>
+      <text x="14" y="106" font-size="10.5" fill="#6b6b6b">MCP · AST-grep</text>
+    </g>
+    
+    <line x1="352" y1="120" x2="362" y2="120" stroke="#6b6b6b" stroke-width="1"></line>
+    <polygon points="362,116 368,120 362,124" fill="#6b6b6b"></polygon>
+    <g transform="translate(362, 56)">
+      <rect width="156" height="128" rx="6" fill="#141414" stroke="#2a2a2a"></rect>
+      <text x="14" y="22" font-size="10" fill="#6b6b6b">03</text>
+      <text x="14" y="50" font-size="16" font-weight="700" fill="#e5e5e5" letter-spacing="1">TEST</text>
+      <line x1="14" y1="62" x2="40" y2="62" stroke="#4ade80" stroke-width="2"></line>
+      <text x="14" y="88" font-size="11" fill="#a3a3a3" font-family="&#39;Pretendard&#39;, sans-serif">vitest · pytest</text>
+      <text x="14" y="106" font-size="10.5" fill="#6b6b6b">2,800+ tests</text>
+    </g>
+    
+    <line x1="518" y1="120" x2="528" y2="120" stroke="#6b6b6b" stroke-width="1"></line>
+    <polygon points="528,116 534,120 528,124" fill="#6b6b6b"></polygon>
+    <g transform="translate(528, 56)">
+      <rect width="156" height="128" rx="6" fill="#141414" stroke="#2a2a2a"></rect>
+      <text x="14" y="22" font-size="10" fill="#6b6b6b">04</text>
+      <text x="14" y="50" font-size="16" font-weight="700" fill="#e5e5e5" letter-spacing="1">REVIEW</text>
+      <line x1="14" y1="62" x2="40" y2="62" stroke="#4ade80" stroke-width="2"></line>
+      <text x="14" y="88" font-size="11" fill="#a3a3a3" font-family="&#39;Pretendard&#39;, sans-serif">Human gate</text>
+      <text x="14" y="106" font-size="10.5" fill="#6b6b6b">보안 · 성능 · 아키</text>
+    </g>
+    
+    <line x1="684" y1="120" x2="694" y2="120" stroke="#6b6b6b" stroke-width="1"></line>
+    <polygon points="694,116 700,120 694,124" fill="#6b6b6b"></polygon>
+    <g transform="translate(694, 56)">
+      <rect width="156" height="128" rx="6" fill="#141414" stroke="#2a2a2a"></rect>
+      <text x="14" y="22" font-size="10" fill="#6b6b6b">05</text>
+      <text x="14" y="50" font-size="16" font-weight="700" fill="#e5e5e5" letter-spacing="1">DEPLOY</text>
+      <line x1="14" y1="62" x2="40" y2="62" stroke="#4ade80" stroke-width="2"></line>
+      <text x="14" y="88" font-size="11" fill="#a3a3a3" font-family="&#39;Pretendard&#39;, sans-serif">CI/CD</text>
+      <text x="14" y="106" font-size="10.5" fill="#6b6b6b">Vercel · Railway</text>
+    </g>
+    
+</svg>
