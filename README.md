@@ -16,7 +16,7 @@
 
 ## ⚡ TL;DR
 
-> **풀스택 외주 디렉터.** AI 코딩 에이전트로 기획→구현→테스트→배포 사이클을 압축합니다. **9개 프로덕션** · **16개 업종 데모** · **Web · Toss 미니앱 · Android PDA** 3개 플랫폼.
+> **풀스택 외주 디렉터.** AI 코딩 에이전트로 기획→구현→테스트→배포 사이클을 압축합니다. **9개 프로덕션** · **16개 업종 데모** · **Web · 티머니GO 인앱 웹뷰 · Android PDA** 3개 플랫폼.
 >
 > Currently shipping **[Agora](https://github.com/doublesilver/agora)** — multi-AI debate tool with human-in-the-loop intervention. Open to full-stack / AI engineer 외주.
 
@@ -44,11 +44,11 @@ Claude · GPT · Gemini 직렬 라운드 + 사용자 인터럽트.
 ### 🚇 [Gagisiro](https://github.com/doublesilver/subway-board)
 **출근길 실시간 익명 채팅 · 운영 중**
 
-평일 07:00~09:00 · k6 부하 테스트 P95 77ms (200 동시) · Apps in Toss 미니앱.
+평일 08:00~10:00·17:00~19:00 · k6 부하 테스트 P95 77ms (200 동시) · 티머니GO 인앱 웹뷰 연동.
 
-`React 19` · `Express 5` · `Socket.IO` · `1,900+ tests`
+`React 19` · `Express 5` · `Socket.IO` · `1,821 tests`
 
-🔗 [Live](https://gagisiro.com) · [Toss 미니앱](https://toss.im)
+🔗 [Live](https://gagisiro.com) · 티머니GO 인앱 웹뷰 연동
 
 </td>
 </tr>
@@ -138,15 +138,15 @@ Groq Llama-3 분류 · Celery 비동기 큐 · S3 이미지 업로드 · JWT + R
 
 ### 2. [Gagisiro (가기싫어)](https://github.com/doublesilver/subway-board) · 출근길 실시간 익명 채팅
 
-> **운영 중 — [gagisiro.com](https://gagisiro.com)** · 평일 07:00~09:00 동시 사용자 트래픽 처리
+> **운영 중 — [gagisiro.com](https://gagisiro.com)** · 평일 08:00~10:00·17:00~19:00 (KST) 동시 사용자 트래픽 처리
 
 - 🚇 **Features**: 9개 호선별 실시간 채팅 · 답장/리액션 · 실시간 혼잡도 · 게시글 검색 · 푸시 알림
 - 🤖 **AI Filtering**: Local Regex + OpenAI Moderation API 하이브리드
 - 📊 **Admin**: Recharts 대시보드 · DAU/WAU/MAU 분석 · 신고 관리 · 커스텀 SQL 쿼리
 - 🏗️ **Tech**: React `19.2.3` + Vite · Express `5.0.0` · Socket.IO `4.8.3` · TypeScript strict · PostgreSQL · Redis `5.10.0`
-- 📱 **Apps in Toss**: 토스 미니앱 배포 · 인앱 광고 3종 (배너/전면/보상형)
-- 🔧 **Infra**: Railway (Backend + DB + Redis) · Vercel (Frontend) · GitHub Actions CI/CD (4 workflows)
-- ✅ **Quality**: **1,900+ tests** (139 test files) · 80%+ coverage · OWASP Top 10 대응
+- 📱 **티머니GO 연동**: 티머니 모빌리티 인앱 웹뷰 임베드 · 인앱 뒤로가기 JS 브릿지(iOS/Android) · 운영시간 파트너십 정렬(출퇴근 핫타임)
+- 🔧 **Infra**: OCI (arm-big) — Backend ×3 + PostgreSQL + Redis (docker compose) · Caddy 정적 서빙 + cookie LB · GitHub Actions CI/CD
+- ✅ **Quality**: **1,821 tests** (126 test files) · 80%+ coverage · OWASP Top 10 대응
 
 <details>
 <summary><b>⚡ k6 부하 테스트 (CI 자동 실행)</b></summary>
@@ -324,4 +324,4 @@ flowchart LR
 
 </div>
 
-<!-- Last Updated: 2026-05-09 · Built with detail-driven verification -->
+<!-- Last Updated: 2026-07-22 · Built with detail-driven verification -->
