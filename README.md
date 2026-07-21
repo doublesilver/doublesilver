@@ -1,11 +1,11 @@
 <!-- ============ HEADER BANNER ============ -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B5CF6,100:06B6D4&height=220&section=header&text=Eunseok%20Lee&fontSize=58&fontColor=ffffff&fontAlignY=36&animation=fadeIn&desc=Full-Stack%20Director%20%C2%B7%20AI-Assisted%20Engineering%20at%20Delivery%20Speed&descAlignY=58&descSize=18" width="100%" alt="Eunseok Lee" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0077B6,100:14B8A6&height=220&section=header&text=Eunseok%20Lee&fontSize=58&fontColor=ffffff&fontAlignY=36&animation=fadeIn&desc=Full-Stack%20Director%20%C2%B7%20AI-Assisted%20Engineering%20at%20Delivery%20Speed&descAlignY=58&descSize=18" width="100%" alt="Eunseok Lee" />
 
 <!-- ============ TYPING HERO ============ -->
 <a href="mailto:korea5410@gmail.com">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&pause=1000&color=8B5CF6&center=true&vCenter=true&width=760&height=52&lines=9+Production+Apps+%C2%B7+16+Industry+Demos;Web+%C2%B7+In-App+WebView+%C2%B7+Android+PDA;Plan+%E2%86%92+Code+%E2%86%92+Test+%E2%86%92+Ship%2C+compressed+with+AI;%E2%9C%89%EF%B8%8E+korea5410%40gmail.com+%E2%80%94+Hire+me" alt="Typing hero" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&pause=1000&color=00B4D8&center=true&vCenter=true&width=760&height=52&lines=9+Production+Apps+%C2%B7+16+Industry+Demos;Web+%C2%B7+In-App+WebView+%C2%B7+Android+PDA;Plan+%E2%86%92+Code+%E2%86%92+Test+%E2%86%92+Ship%2C+compressed+with+AI;%E2%9C%89%EF%B8%8E+korea5410%40gmail.com+%E2%80%94+Hire+me" alt="Typing hero" />
 </a>
 
 <br/>
@@ -18,7 +18,7 @@
 
 <br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=doublesilver&label=Profile%20Views&color=8B5CF6&style=for-the-badge)
+![Profile Views](https://komarev.com/ghpvc/?username=doublesilver&label=Profile%20Views&color=0077B6&style=for-the-badge)
 [![Email](https://img.shields.io/badge/korea5410%40gmail.com-Hire%20me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:korea5410@gmail.com)
 
 </div>
@@ -292,7 +292,7 @@ flowchart LR
     T --> R["4 · REVIEW<br/>Human 게이트<br/>보안 · 성능 · 아키텍처"]
     R --> D["5 · SHIP<br/>CI/CD<br/>OCI · Vercel · Railway"]
     D -. 피드백 .-> P
-    classDef s fill:#8B5CF6,stroke:#06B6D4,color:#fff;
+    classDef s fill:#0077B6,stroke:#14B8A6,color:#fff;
     class P,C,T,R,D s;
 ```
 
@@ -302,11 +302,11 @@ flowchart LR
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=doublesilver&theme=tokyonight&hide_border=true" alt="streak" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=doublesilver&hide_border=true&background=0D1117&border=30363D&stroke=0077B6&ring=00B4D8&fire=00B4D8&currStreakNum=00B4D8&currStreakLabel=00B4D8&sideNums=0077B6&sideLabels=90E0EF&dates=8B949E" alt="streak" />
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=doublesilver&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Graph" width="100%" alt="activity graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=doublesilver&hide_border=true&bg_color=0d1117&color=00b4d8&line=0077b6&point=90e0ef&area=true&area_color=0077b6&custom_title=Contribution%20Graph" width="100%" alt="activity graph" />
 
 </div>
 
@@ -337,6 +337,6 @@ flowchart LR
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,100:8B5CF6&height=120&section=footer" width="100%" alt="footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:14B8A6,100:0077B6&height=120&section=footer" width="100%" alt="footer" />
 
 <!-- Last Updated: 2026-07-22 · Built with detail-driven verification · Metrics verified against source -->
