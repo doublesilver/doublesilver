@@ -5,7 +5,7 @@
 
 <!-- ============ TYPING HERO ============ -->
 <a href="mailto:korea5410@gmail.com">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&pause=1000&color=8B5CF6&center=true&vCenter=true&width=760&height=52&lines=9+Production+Apps+%C2%B7+16+Industry+Demos;Web+%C2%B7+TmoneyGO+In-App+WebView+%C2%B7+Android+PDA;Plan+%E2%86%92+Code+%E2%86%92+Test+%E2%86%92+Ship%2C+compressed+with+AI;%E2%9C%89%EF%B8%8E+korea5410%40gmail.com+%E2%80%94+Hire+me" alt="Typing hero" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&pause=1000&color=8B5CF6&center=true&vCenter=true&width=760&height=52&lines=9+Production+Apps+%C2%B7+16+Industry+Demos;Web+%C2%B7+In-App+WebView+%C2%B7+Android+PDA;Plan+%E2%86%92+Code+%E2%86%92+Test+%E2%86%92+Ship%2C+compressed+with+AI;%E2%9C%89%EF%B8%8E+korea5410%40gmail.com+%E2%80%94+Hire+me" alt="Typing hero" />
 </a>
 
 <br/>
@@ -26,7 +26,7 @@
 <!-- ============ TL;DR ============ -->
 > [!NOTE]
 > **풀스택 외주 디렉터.** AI 코딩 에이전트로 기획 → 구현 → 테스트 → 배포 사이클을 압축합니다.
-> **9개 프로덕션** · **16개 업종 데모** · **Web · 티머니GO 인앱 웹뷰 · Android PDA** 3개 플랫폼.
+> **9개 프로덕션** · **16개 업종 데모** · **Web · 인앱 웹뷰 · Android PDA** 3개 플랫폼.
 > 단순 vibe-coding이 아니라 **AI 코드 + Human 판단**의 페어 워크플로로 딜리버리합니다.
 
 ## Featured Work
@@ -51,8 +51,8 @@ Claude · GPT · Gemini 직렬 라운드 + 사용자 인터럽트.
 ### [Gagisiro](https://github.com/doublesilver/subway-board)
 **출근길 실시간 익명 채팅 · 운영 중**
 
-평일 08:00~10:00·17:00~19:00 (KST). k6 P95 77ms (200 동시).
-티머니GO 인앱 웹뷰 연동 · OCI 자가호스팅.
+평일 08–10시 · 17–19시 운영 (KST) · k6 P95 77ms @ 200 동시.
+인앱 웹뷰 연동 · OCI(arm-big) 자가호스팅.
 
 `React 19` · `Express 5` · `Socket.IO` · `1,821 tests`
 
@@ -146,10 +146,10 @@ Groq Llama-3 분류 · Celery 비동기 큐 · S3 업로드 · JWT + RBAC.
 
 <br/>
 
-> **[gagisiro.com](https://gagisiro.com)** · 평일 08:00~10:00·17:00~19:00 (KST) 동시 사용자 트래픽 처리
+> **[gagisiro.com](https://gagisiro.com)** · 평일 08–10시 · 17–19시 (KST) 동시 사용자 트래픽 처리
 
 - 🚇 **Features**: 9개 호선별 실시간 채팅 · 답장/리액션 · 실시간 혼잡도 · 게시글 검색 · 푸시 알림
-- 📱 **티머니GO 연동**: 티머니 모빌리티 인앱 웹뷰 임베드 · 인앱 뒤로가기 JS 브릿지(iOS/Android) · 운영시간 파트너십 정렬(출퇴근 핫타임)
+- 📱 **하이브리드 웹뷰**: 모바일 앱 인앱 웹뷰 임베드 · 인앱 뒤로가기 JS 브릿지(iOS/Android)
 - 🤖 **AI Filtering**: Local Regex + OpenAI Moderation API 하이브리드
 - 📊 **Admin**: Recharts 대시보드 · DAU/WAU/MAU 분석 · 신고 관리 · 커스텀 SQL 쿼리
 - 🏗️ **Tech**: React `19.2.3` + Vite · Express `5.0.0` · Socket.IO `4.8.3` · TypeScript strict · PostgreSQL · Redis
@@ -307,10 +307,6 @@ flowchart LR
 <br/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=doublesilver&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Graph" width="100%" alt="activity graph" />
-
-<br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=doublesilver&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=8" alt="trophies" />
 
 </div>
 
