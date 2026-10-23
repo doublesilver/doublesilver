@@ -587,7 +587,7 @@ Claude · GPT · Gemini 직렬 라운드 + 사용자 인터럽트.
 <tr>
 <td width="50%" valign="top">
 
-#### [Biz-Retriever](https://github.com/doublesilver/biz-retriever)
+#### Biz-Retriever
 **AI 입찰 공고 분석 · Raspberry Pi 자체 호스팅**
 
 Gemini 2.5 Flash + LangChain RAG · Tailscale 사내 망.
@@ -595,7 +595,7 @@ Gemini 2.5 Flash + LangChain RAG · Tailscale 사내 망.
 
 `FastAPI` · `Gemini 2.5` · `340+ tests`
 
-[![Repo](https://img.shields.io/badge/REPO-181717?style=flat-square&logo=github)](https://github.com/doublesilver/biz-retriever)
+![Private](https://img.shields.io/badge/REPO-Private-555555?style=flat-square&logo=github)
 
 </td>
 <td width="50%" valign="top">
@@ -672,7 +672,7 @@ Groq Llama-3 분류 · Celery 비동기 큐 · S3 업로드 · JWT + RBAC.
 - 🔧 **DevOps**: Raspberry Pi + Tailscale · Prometheus + Grafana · HTTPS/SSL · Docker Compose
 - ✅ **Quality**: **340+ tests** (97 test files) · **95% coverage** · 9,572건 공고 수집 검증
 
-**Repo**: [doublesilver/biz-retriever](https://github.com/doublesilver/biz-retriever)
+**Repo**: 비공개
 
 </details>
 
