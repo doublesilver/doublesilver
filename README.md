@@ -5,12 +5,12 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/doublesilver/doublesilver/main/assets/hero-dark.svg">
-  <img src="https://raw.githubusercontent.com/doublesilver/doublesilver/main/assets/hero-light.svg" width="100%" alt="Eunseok Lee 이은석 — Full-Stack Dev &amp; Planning Lead @ INGSTORY">
+  <img src="https://raw.githubusercontent.com/doublesilver/doublesilver/main/assets/hero-light.svg" width="100%" alt="Eunseok Lee 이은석 — Technical PM · Development Planning Lead @ INGSTORY">
 </picture>
 
 <!-- ============ TYPING ============ -->
 <a href="https://www.ingstory.co.kr">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&pause=1100&color=00B4D8&center=true&vCenter=true&width=820&height=50&lines=Full-Stack+Dev+%26+Planning+Lead+%40+INGSTORY;12%2C439+commits+%C2%B7+72+repos+%C2%B7+124+days;Kiosks+%C2%B7+Apps+%C2%B7+Admin+%C2%B7+Infra+%C2%B7+AI+Agents;Plan+%E2%86%92+Parallel+AI+Workers+%E2%86%92+Verify+%E2%86%92+Ship;Personal%3A+9+Shipped+Projects+%C2%B7+16+Industry+Demos" alt="Full-Stack Dev & Planning Lead @ INGSTORY · 12,439 commits · 72 repos · 124 days">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&pause=1100&color=00B4D8&center=true&vCenter=true&width=820&height=50&lines=Technical+PM+%C2%B7+AI-Agent+Orchestration+%40+INGSTORY;12%2C439+commits+%C2%B7+72+repos+%C2%B7+124+days;Kiosks+%C2%B7+Apps+%C2%B7+Admin+%C2%B7+Infra+%C2%B7+AI+Agents;Plan+%E2%86%92+Parallel+AI+Workers+%E2%86%92+Verify+%E2%86%92+Ship;Personal%3A+9+Shipped+Projects+%C2%B7+16+Industry+Demos" alt="Technical PM · AI-Agent Orchestration @ INGSTORY · 12,439 commits · 72 repos · 124 days">
 </a>
 
 <!-- ============ CONTACT ============ -->
@@ -44,7 +44,7 @@
 </div>
 
 > [!NOTE]
-> **TL;DR — 아이엔지스토리(INGSTORY) 풀스택 개발기획 총괄.** 2026-06-22 입사 후 124일 동안 매장 통합관리 플랫폼, 전국 매장 기기 원격 관제, CX 자동화, 업종별 SaaS, 헤어99 재구축, 사내 협업 플랫폼, 인프라·보안, AI 운영체계까지 **8개 영역**을 맡았습니다.
+> **TL;DR — 아이엔지스토리(INGSTORY) 개발기획 총괄(Technical PM).** 2026-06-22 입사 후 124일 동안 매장 통합관리 플랫폼, 전국 매장 기기 원격 관제, CX 자동화, 업종별 SaaS, 헤어99 재구축, 사내 협업 플랫폼, 인프라·보안, AI 운영체계까지 **8개 영역**을 맡았습니다.
 > **기획·설계·검증과 최종 판단은 제가, 구현은 AI 에이전트(Claude Code)가 맡습니다.** 그래서 제 일의 중심은 "무엇을 만들지"와 "정말 됐는지 어떻게 증명할지"입니다.
 
 ---
@@ -53,7 +53,7 @@
 
 **(주)아이엔지스토리** — 공간 브랜드 개발·인테리어·무인운영 토탈 솔루션 회사입니다. 스터디카페 브랜드 **작심**, 유·무인 매장 통합관리 시스템 **픽코파트너스**(스터디카페·헬스장·태닝샵·무인창고·공유오피스·무인키즈카페·파티룸·F&B 등 업종별 프로그램), 미용업계 구인구직 플랫폼 **헤어99**를 운영합니다.
 
-저는 **풀스택 개발기획 총괄**로서 요구를 인터뷰해 수용 기준으로 바꾸고, 작업을 갈래로 쪼개 AI 워커들에게 병렬로 맡기고, 결과를 독립 검증한 뒤 되돌릴 수 없는 변경만 직접 승인합니다. 새 기능은 스위치를 끈 채 배포하고, 운영 반영은 1건씩 하고, 매번 30분 감시합니다.
+저는 **개발기획 총괄(Technical PM)**로서 요구를 인터뷰해 수용 기준으로 바꾸고, 작업을 갈래로 쪼개 AI 워커들에게 병렬로 맡기고, 결과를 독립 검증한 뒤 되돌릴 수 없는 변경만 직접 승인합니다. 새 기능은 스위치를 끈 채 배포하고, 운영 반영은 1건씩 하고, 매번 30분 감시합니다.
 
 > [!IMPORTANT]
 > **커밋 12,439건은 이렇게 읽어 주세요.**[^commits] 사내 저장소 72개에서 본인 계정 커밋을 병합 제외·중복 제거해 센 값입니다. 대부분은 **AI 에이전트가 작업 단위로 남긴 커밋**이고, 지식베이스·업무원장 커밋 **4,599건**이 포함돼 있습니다. 사람이 직접 친 코드의 양이 아니라 **지휘한 작업의 밀도**로 봐 주세요.
