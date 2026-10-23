@@ -720,7 +720,7 @@ Groq Llama-3 분류 · Celery 비동기 큐 · S3 업로드 · JWT + RBAC.
 - 🔧 **Infra**: Zebra 전용 Mini PC 사내 서버 · 스캔→조회 0.3~0.5s
 - ✅ **Quality**: **55+ tests** · 프로덕션 하드웨어 무중단 운영
 
-**Repo**: [doublesilver/scan](https://github.com/doublesilver/scan)
+**Repo**: 비공개(고객 산출물)
 
 </details>
 
@@ -764,7 +764,7 @@ Groq Llama-3 분류 · Celery 비동기 큐 · S3 업로드 · JWT + RBAC.
 - 🏗️ **Tech**: HTML5 · CSS3 · Vanilla JS · 신뢰감 중심 UI
 - 🔧 **Infra**: Vercel · FormSubmit 이메일 연동
 
-**Live**: [s-partners.vercel.app](https://s-partners.vercel.app) · **Repo**: [doublesilver/s-partners-landing](https://github.com/doublesilver/s-partners-landing)
+**Live**: [s-partners.vercel.app](https://s-partners.vercel.app) · **Repo**: 비공개(고객 산출물)
 
 </details>
 
