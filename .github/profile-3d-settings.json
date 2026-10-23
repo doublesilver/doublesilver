@@ -1,0 +1,36 @@
+[
+  {
+    "type": "normal",
+    "fileName": "profile-3d-ocean.svg",
+    "backgroundColor": "#ffffff",
+    "foregroundColor": "#0b1f33",
+    "strongColor": "#0077b6",
+    "weakColor": "#4a6178",
+    "radarColor": "#00b4d8",
+    "growingAnimation": true,
+    "contribColors": ["#e6f4fb", "#90e0ef", "#00b4d8", "#0077b6", "#023e8a"],
+    "darkMode": {
+      "type": "normal",
+      "backgroundColor": "#0d1117",
+      "foregroundColor": "#e6edf3",
+      "strongColor": "#2dd4bf",
+      "weakColor": "#8b949e",
+      "radarColor": "#00b4d8",
+      "contribColors": ["#161b22", "#0a3d5c", "#0077b6", "#00b4d8", "#90e0ef"]
+    }
+  },
+  {
+    "type": "rainbow",
+    "fileName": "profile-3d-rainbow.svg",
+    "backgroundColor": "#0d1117",
+    "foregroundColor": "#e6edf3",
+    "strongColor": "#2dd4bf",
+    "weakColor": "#8b949e",
+    "radarColor": "#00b4d8",
+    "growingAnimation": true,
+    "saturation": "60%",
+    "contribLightness": ["18%", "30%", "38%", "46%", "56%"],
+    "duration": "12s",
+    "hueRatio": -5
+  }
+]

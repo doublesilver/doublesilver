@@ -1,0 +1,95 @@
+name: Profile Visuals
+
+# 스네이크·3D 잔디·통계 카드를 한 작업에서 만들어 output 브랜치에 한 번만 올린다.
+# (예전엔 스네이크와 통계가 같은 브랜치를 따로 덮어써서 매일 통계 이미지가 잠시 사라졌다)
+on:
+  schedule:
+    - cron: "40 15 * * *" # 매일 KST 00:40
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-visuals
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Snake
+        uses: Platane/snk@v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg?color_snake=#0077B6&color_dots=#dff3fb,#90e0ef,#00b4d8,#0077b6,#023e8a
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00B4D8&color_dots=#161b22,#0a3d5c,#0077b6,#00b4d8,#90e0ef
+
+      - name: 3D contribution calendar
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: .github/profile-3d-settings.json
+
+      - name: Metrics — overview
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: ${{ github.repository_owner }}
+          template: classic
+          base: header, activity, community, repositories
+          config_timezone: Asia/Seoul
+          output_action: none
+          filename: metrics-stats.svg
+
+      - name: Metrics — languages
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: ${{ github.repository_owner }}
+          template: classic
+          base: ""
+          config_timezone: Asia/Seoul
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 0%
+          output_action: none
+          filename: metrics-languages.svg
+
+      - name: Metrics — isometric calendar
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: ${{ github.repository_owner }}
+          template: classic
+          base: ""
+          config_timezone: Asia/Seoul
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          output_action: none
+          filename: metrics-isocalendar.svg
+
+      - name: Collect
+        run: |
+          # snk 컨테이너가 dist 를 root 로 만들어 두므로 복사·소유권 정리는 sudo 로 한다
+          sudo mkdir -p dist
+          sudo cp profile-3d-contrib/*.svg /metrics_renders/*.svg dist/
+          sudo chown -R "$(id -u):$(id -g)" dist
+          ls -la dist
+
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v5
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "chore: profile visuals"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

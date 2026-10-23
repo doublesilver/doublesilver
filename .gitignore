@@ -1,0 +1,4 @@
+scripts/data/claims.json
+claims.json
+__pycache__/
+*.pyc

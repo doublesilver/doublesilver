@@ -1,0 +1,203 @@
+{
+  "_provisional": false,
+  "_note": "확정값(2026-10-23 전수조사 반영). 문구·수치는 README.md 와 일치해야 한다. 공개 프로필 기밀 정책을 지킨다.",
+  "name_en": "Eunseok Lee",
+  "name_ko": "이은석",
+  "role_en": "Full-Stack Dev & Planning Lead @ INGSTORY",
+  "role_ko": "아이엔지스토리 풀스택 개발기획 총괄",
+  "tagline": "AI-Orchestrated Engineering — Plan · Build · Verify · Ship",
+  "chips": [
+    "Web",
+    "App",
+    "Kiosk",
+    "Admin",
+    "Infra",
+    "AI Agents"
+  ],
+  "since": "2026-06-22",
+  "asof": "2026-10-23",
+  "stats": [
+    {
+      "key": "days",
+      "value": "124",
+      "label": "Days @ INGSTORY",
+      "sub": "2026.06.22 → 10.23"
+    },
+    {
+      "key": "repos",
+      "value": "72",
+      "label": "Repositories",
+      "sub": "사내 저장소 72개"
+    },
+    {
+      "key": "commits",
+      "value": "12,439",
+      "label": "Commits",
+      "sub": "AI 에이전트 작업 단위 포함"
+    },
+    {
+      "key": "active",
+      "value": "98",
+      "label": "Active Days",
+      "sub": "124일 중"
+    },
+    {
+      "key": "domains",
+      "value": "8",
+      "label": "Domains Owned",
+      "sub": "플랫폼 · 기기 · CX · 인프라 …"
+    },
+    {
+      "key": "reports",
+      "value": "46",
+      "label": "Daily Reports",
+      "sub": "세션 로그 × git 교차검증"
+    }
+  ],
+  "domains": [
+    {
+      "key": "pickko",
+      "icon": "store",
+      "title": "픽코파트너스 플랫폼",
+      "subtitle": "유·무인 매장 통합관리 — 관리자 · 회원앱 · 키오스크 · 결제",
+      "commits": 3427,
+      "metric": "DB 배치 부하 −87%"
+    },
+    {
+      "key": "fleet",
+      "icon": "devices",
+      "title": "매장 기기 원격 관제",
+      "subtitle": "전국 매장 PC·키오스크 — 원격관리 · 자동복구 · 자체 콘솔",
+      "commits": 273,
+      "metric": "원격 연결 13.3s → 1.1s"
+    },
+    {
+      "key": "cx",
+      "icon": "chat",
+      "title": "CX 자동화",
+      "subtitle": "자체 상담 플랫폼 · 문의 자동 조사봇 · AI 답변 초안",
+      "commits": 879,
+      "metric": "6개월 상담 이관 유실 0"
+    },
+    {
+      "key": "partners",
+      "icon": "dumbbell",
+      "title": "업종별 SaaS",
+      "subtitle": "헬스 · 웰니스 · 좌석형 시설 — CRM · 키오스크 · 회원앱",
+      "commits": 1272,
+      "metric": "AI 작업 창 32개 병렬"
+    },
+    {
+      "key": "hair99",
+      "icon": "scissors",
+      "title": "헤어99",
+      "subtitle": "레거시 PHP 전면 재구축 · AWS·PostgreSQL 이전",
+      "commits": 656,
+      "metric": "이전 쓰기 정지 약 4분 20초"
+    },
+    {
+      "key": "internal-platform",
+      "icon": "network",
+      "title": "사내 협업 플랫폼",
+      "subtitle": "상용 메신저 대체 — 이관 · SSO · 봇 · 웹 버전",
+      "commits": 1118,
+      "metric": "4년치 이관 유실 0"
+    },
+    {
+      "key": "infra-security",
+      "icon": "shield",
+      "title": "인프라 · 보안 · 운영",
+      "subtitle": "감시 · 배포 경계 · 시크릿 가드레일 · 비용",
+      "commits": 0,
+      "metric": "월 인프라 비용 절감(담당분)"
+    },
+    {
+      "key": "knowledge-ops",
+      "icon": "brain",
+      "title": "지식베이스 & AI 운영체계",
+      "subtitle": "환경 지식베이스 · 발견→조치 원장 · 멀티 에이전트",
+      "commits": 4599,
+      "metric": "조사 216건 적대 재검증"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-06-22",
+      "title": "입사",
+      "sub": "첫날 기기 현황판 배포"
+    },
+    {
+      "date": "2026-07",
+      "title": "헤어99 재구축",
+      "sub": "ERP 프로토타입 3일"
+    },
+    {
+      "date": "2026-08",
+      "title": "양대 스토어 출시",
+      "sub": "AI 작업 창 32개 병렬"
+    },
+    {
+      "date": "2026-09",
+      "title": "메신저 이관 유실 0",
+      "sub": "4년치 대화 · 171GB"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "상담 플랫폼 운영",
+      "sub": "스펙 확정 한 달 만에"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "DB 배치 부하 −87%",
+      "sub": "대조군 두고 한 대씩"
+    },
+    {
+      "date": "2026-10-12",
+      "title": "헤어99 AWS 이전",
+      "sub": "쓰기 정지 약 4분 20초"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "전수조사",
+      "sub": "32갈래 · 항목 830개"
+    }
+  ],
+  "terminal": [
+    {
+      "kind": "cmd",
+      "text": "claude \"입사 후 작업 전부 전수조사해서 프로필 갱신해줘\""
+    },
+    {
+      "kind": "info",
+      "text": "⏺ Workflow · 32 parallel collectors → synthesize → critic → verify"
+    },
+    {
+      "kind": "ok",
+      "text": "✓ 퇴근보고 46일 · 항목 830개 · 도메인 도시에 12개"
+    },
+    {
+      "kind": "ok",
+      "text": "✓ 회사 커밋 12,439건 · 저장소 72개 · 활동일 98/124"
+    },
+    {
+      "kind": "info",
+      "text": "⏺ 기밀 검수 — 회사 내부 정보 제외"
+    },
+    {
+      "kind": "info",
+      "text": "⏺ Shipped → github.com/doublesilver"
+    }
+  ],
+  "domain_short": {
+    "pickko": "픽코파트너스",
+    "knowledge-ops": "지식베이스·AI",
+    "partners": "업종별 SaaS",
+    "internal-platform": "사내 협업",
+    "cx": "CX",
+    "hair99": "헤어99",
+    "fleet": "기기 관제",
+    "zaksim": "작심",
+    "web-sites": "브랜드 웹",
+    "other-company": "사내 도구"
+  }
+}

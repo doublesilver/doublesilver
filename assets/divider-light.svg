@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="36" viewBox="0 0 1280 36" fill="none" role="img" aria-label="Section divider" aria-labelledby="divider-title divider-desc"><title id="divider-title">Section divider</title><desc id="divider-desc">흐르는 딥오션 그라디언트 구분선</desc><style>@keyframes divider-k-fu{from{opacity:0;transform:translateY(16px)}}
+@keyframes divider-k-fd{from{opacity:0;transform:translateY(-14px)}}
+@keyframes divider-k-fi{from{opacity:0}}
+@keyframes divider-k-pop{from{opacity:0;transform:scale(.6)}}
+@keyframes divider-k-draw{from{stroke-dashoffset:1}}
+@keyframes divider-k-type{from{transform:scaleX(0)}}
+@keyframes divider-k-odo{from{transform:translateY(0)}}
+@keyframes divider-k-glow{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes divider-k-tw{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes divider-k-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes divider-k-floats{0%,100%{transform:translate(0,0)}33%{transform:translate(28px,-14px)}66%{transform:translate(-18px,12px)}}
+@keyframes divider-k-spin{to{transform:rotate(360deg)}}
+@keyframes divider-k-spinr{to{transform:rotate(-360deg)}}
+@keyframes divider-k-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+@keyframes divider-k-breathe{0%,100%{opacity:.35}50%{opacity:.8}}
+@keyframes divider-k-sway{0%,100%{transform:translateX(0)}50%{transform:translateX(-22px)}}
+@keyframes divider-k-blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+.divider-fu{animation:divider-k-fu .9s cubic-bezier(.16,1,.3,1) both}
+.divider-fd{animation:divider-k-fd .9s cubic-bezier(.16,1,.3,1) both}
+.divider-fi{animation:divider-k-fi 1s ease-out both}
+.divider-pop{animation:divider-k-pop .7s cubic-bezier(.34,1.56,.64,1) both;transform-box:fill-box;transform-origin:center}
+.divider-draw{stroke-dasharray:1;stroke-dashoffset:0;animation:divider-k-draw 1.6s cubic-bezier(.16,1,.3,1) both}
+.divider-type{animation:divider-k-type 1.4s steps(28,end) both;transform-box:fill-box;transform-origin:0 0}
+.divider-odo{animation:divider-k-odo 1.8s cubic-bezier(.16,1,.3,1) both}
+.divider-glow{animation:divider-k-glow 4s cubic-bezier(.45,0,.55,1) infinite}
+.divider-tw{animation:divider-k-tw 3.6s cubic-bezier(.45,0,.55,1) infinite}
+.divider-float{animation:divider-k-float 7s cubic-bezier(.45,0,.55,1) infinite}
+.divider-floats{animation:divider-k-floats 14s cubic-bezier(.45,0,.55,1) infinite}
+.divider-spin{animation:divider-k-spin 36s linear infinite}
+.divider-spinr{animation:divider-k-spinr 28s linear infinite}
+.divider-pulse{animation:divider-k-pulse 3.2s cubic-bezier(.45,0,.55,1) infinite;transform-box:fill-box;transform-origin:center}
+.divider-breathe{animation:divider-k-breathe 6s cubic-bezier(.45,0,.55,1) infinite}
+.divider-sway{animation:divider-k-sway 9s cubic-bezier(.45,0,.55,1) infinite}
+.divider-blink{animation:divider-k-blink 1.1s step-end infinite}
+@keyframes divider-k-flow640{from{transform:translate(0,0)}to{transform:translate(640px,0px)}}
+@keyframes divider-k-run{0%{transform:translateX(-260px);opacity:0}6%{opacity:1}44%{opacity:1}50%{transform:translateX(1380px);opacity:0}100%{transform:translateX(1380px);opacity:0}}
+@keyframes divider-k-runr{0%,50%{transform:translateX(1380px);opacity:0}56%{opacity:.8}94%{opacity:.8}100%{transform:translateX(-260px);opacity:0}}
+.divider-s{display:none}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}.divider-m{display:none!important}.divider-s{display:inline!important}}</style><defs><linearGradient id="divider-fade-g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.16" stop-color="#fff" stop-opacity="1"/><stop offset="0.84" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="divider-fade" maskUnits="userSpaceOnUse" x="0" y="0" width="1280" height="36"><rect width="1280" height="36" fill="url(#divider-fade-g)"/></mask><linearGradient id="divider-flow" x1="0" y1="0" x2="640" y2="0" gradientUnits="userSpaceOnUse" spreadMethod="repeat"><stop offset="0" stop-color="#0077B6"/><stop offset="0.2" stop-color="#00B4D8"/><stop offset="0.4" stop-color="#14B8A6"/><stop offset="0.6" stop-color="#7C3AED"/><stop offset="0.8" stop-color="#00B4D8"/><stop offset="1" stop-color="#0077B6"/></linearGradient><linearGradient id="divider-pulse" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.95"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient><linearGradient id="divider-rim" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0077B6" stop-opacity="0"/><stop offset="0.5" stop-color="#0077B6" stop-opacity="0.9"/><stop offset="1" stop-color="#7C3AED" stop-opacity="0"/></linearGradient><linearGradient id="divider-halo" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00B4D8" stop-opacity="0"/><stop offset="0.5" stop-color="#00B4D8" stop-opacity="0.25"/><stop offset="1" stop-color="#14B8A6" stop-opacity="0"/></linearGradient><filter id="divider-glow" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/><feComponentTransfer in="b" result="bb"><feFuncA type="linear" slope="0.5"/></feComponentTransfer><feMerge><feMergeNode in="bb"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="divider-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter></defs><g mask="url(#divider-fade)"><rect x="0" y="15" width="1280" height="6" fill="url(#divider-flow)" opacity="0.18" filter="url(#divider-blur)"/><g><rect x="-640" y="16.5" width="2560" height="3" fill="url(#divider-flow)" style="animation:divider-k-flow640 10s linear 0ms infinite both"/></g><g class="divider-m"><g style="animation:divider-k-run 9s cubic-bezier(.45,0,.55,1) 400ms infinite both"><rect x="0" y="12.0" width="220" height="12" rx="6.0" fill="url(#divider-halo)" filter="url(#divider-blur)"/><rect x="34" y="15.05" width="152" height="5.9" rx="2.95" fill="url(#divider-rim)"/><rect x="40" y="16.25" width="140" height="3.5" rx="1.75" fill="url(#divider-pulse)" filter="url(#divider-glow)"/></g><g style="animation:divider-k-runr 9s cubic-bezier(.45,0,.55,1) 400ms infinite both"><rect x="20" y="13.0" width="180" height="10" rx="5.0" fill="url(#divider-halo)" filter="url(#divider-blur)"/><rect x="44" y="15.3" width="132" height="5.4" rx="2.7" fill="url(#divider-rim)"/><rect x="50" y="16.5" width="120" height="3" rx="1.5" fill="url(#divider-pulse)" filter="url(#divider-glow)"/></g></g><circle cx="260" cy="18" r="2.6" fill="#FFFFFF" stroke="#00B4D8" stroke-width="1" filter="url(#divider-glow)" class="divider-tw" style="animation-delay:-0ms"/><circle cx="470" cy="18" r="2.6" fill="#FFFFFF" stroke="#00B4D8" stroke-width="1" filter="url(#divider-glow)" class="divider-tw" style="animation-delay:-900ms"/><circle cx="810" cy="18" r="2.6" fill="#FFFFFF" stroke="#00B4D8" stroke-width="1" filter="url(#divider-glow)" class="divider-tw" style="animation-delay:-1800ms"/><circle cx="1020" cy="18" r="2.6" fill="#FFFFFF" stroke="#00B4D8" stroke-width="1" filter="url(#divider-glow)" class="divider-tw" style="animation-delay:-2700ms"/></g><g transform="translate(640,18)"><g class="divider-glow"><circle r="12" fill="rgba(0,180,216,0.14)" filter="url(#divider-blur)"/></g><rect x="-8" y="-8" width="16" height="16" rx="2.5" transform="rotate(45)" fill="#FFFFFF" stroke="#00B4D8" stroke-width="2"/><rect x="-3.4" y="-3.4" width="6.8" height="6.8" rx="1.2" transform="rotate(45)" fill="#0D9488" filter="url(#divider-glow)"/></g></svg>
