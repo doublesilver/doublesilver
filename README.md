@@ -16,7 +16,7 @@
 <!-- ============ CONTACT ============ -->
 [![INGSTORY](https://img.shields.io/badge/INGSTORY-ingstory.co.kr-0077B6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.ingstory.co.kr)
 [![Email](https://img.shields.io/badge/korea5410%40gmail.com-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:korea5410@gmail.com)
-![Profile Views](https://komarev.com/ghpvc/?username=doublesilver&label=Profile%20Views&color=0077B6&style=for-the-badge)
+![Profile Views](https://komarev.com/ghpvc/?username=doublesilver&color=0077B6&style=for-the-badge)
 
 <!-- ============ LIVE (HTTP 200 실측 2026-10-23) ============ -->
 [![Hair99](https://img.shields.io/badge/Hair99-Live-14B8A6?style=flat-square&logo=nextdotjs&logoColor=white)](https://hair99.co.kr)
