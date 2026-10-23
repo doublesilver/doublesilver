@@ -1,0 +1,1140 @@
+{
+"_note": "회사 저장소(개인 저장소 제외) 본인 커밋, 병합 제외·SHA/제목 중복 제거, KST",
+"since": "2026-06-22",
+"until": "2026-10-23",
+"total": 12439,
+"repos": 72,
+"active_days": 98,
+"days": 124,
+"by_domain": {
+"knowledge-ops": 4599,
+"pickko": 3427,
+"partners": 1272,
+"internal-platform": 1118,
+"cx": 879,
+"hair99": 656,
+"fleet": 273,
+"zaksim": 140,
+"web-sites": 72,
+"other-company": 3
+},
+"monthly": {
+"2026-06": 21,
+"2026-07": 648,
+"2026-08": 1586,
+"2026-09": 4009,
+"2026-10": 6175
+},
+"max_day": {
+"date": "2026-10-07",
+"total": 764,
+"by": {
+"knowledge-ops": 329,
+"pickko": 339,
+"internal-platform": 56,
+"cx": 4,
+"fleet": 36
+}
+},
+"series": [
+{
+"date": "2026-06-22",
+"total": 10,
+"by": {
+"fleet": 10
+}
+},
+{
+"date": "2026-06-23",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-06-24",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-06-25",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-06-26",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-06-27",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-06-28",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-06-29",
+"total": 3,
+"by": {
+"partners": 3
+}
+},
+{
+"date": "2026-06-30",
+"total": 8,
+"by": {
+"partners": 8
+}
+},
+{
+"date": "2026-07-01",
+"total": 13,
+"by": {
+"pickko": 13
+}
+},
+{
+"date": "2026-07-02",
+"total": 41,
+"by": {
+"partners": 9,
+"zaksim": 28,
+"pickko": 4
+}
+},
+{
+"date": "2026-07-03",
+"total": 44,
+"by": {
+"partners": 21,
+"zaksim": 17,
+"pickko": 6
+}
+},
+{
+"date": "2026-07-04",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-07-05",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-07-06",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-07-07",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-07-08",
+"total": 39,
+"by": {
+"knowledge-ops": 3,
+"partners": 35,
+"pickko": 1
+}
+},
+{
+"date": "2026-07-09",
+"total": 24,
+"by": {
+"partners": 21,
+"cx": 3
+}
+},
+{
+"date": "2026-07-10",
+"total": 55,
+"by": {
+"partners": 25,
+"hair99": 20,
+"zaksim": 2,
+"cx": 3,
+"fleet": 5
+}
+},
+{
+"date": "2026-07-11",
+"total": 41,
+"by": {
+"partners": 16,
+"hair99": 10,
+"zaksim": 15
+}
+},
+{
+"date": "2026-07-12",
+"total": 12,
+"by": {
+"partners": 2,
+"hair99": 10
+}
+},
+{
+"date": "2026-07-13",
+"total": 9,
+"by": {
+"hair99": 6,
+"partners": 3
+}
+},
+{
+"date": "2026-07-14",
+"total": 26,
+"by": {
+"partners": 14,
+"hair99": 12
+}
+},
+{
+"date": "2026-07-15",
+"total": 21,
+"by": {
+"partners": 9,
+"hair99": 12
+}
+},
+{
+"date": "2026-07-16",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-07-17",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-07-18",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-07-19",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-07-20",
+"total": 46,
+"by": {
+"partners": 2,
+"hair99": 27,
+"cx": 17
+}
+},
+{
+"date": "2026-07-21",
+"total": 33,
+"by": {
+"knowledge-ops": 5,
+"partners": 24,
+"hair99": 4
+}
+},
+{
+"date": "2026-07-22",
+"total": 30,
+"by": {
+"knowledge-ops": 2,
+"partners": 10,
+"hair99": 4,
+"zaksim": 14
+}
+},
+{
+"date": "2026-07-23",
+"total": 27,
+"by": {
+"hair99": 4,
+"zaksim": 21,
+"cx": 2
+}
+},
+{
+"date": "2026-07-24",
+"total": 4,
+"by": {
+"knowledge-ops": 3,
+"hair99": 1
+}
+},
+{
+"date": "2026-07-25",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-07-26",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-07-27",
+"total": 52,
+"by": {
+"knowledge-ops": 37,
+"pickko": 1,
+"hair99": 14
+}
+},
+{
+"date": "2026-07-28",
+"total": 42,
+"by": {
+"knowledge-ops": 33,
+"partners": 2,
+"hair99": 7
+}
+},
+{
+"date": "2026-07-29",
+"total": 55,
+"by": {
+"knowledge-ops": 36,
+"hair99": 10,
+"pickko": 2,
+"zaksim": 7
+}
+},
+{
+"date": "2026-07-30",
+"total": 28,
+"by": {
+"knowledge-ops": 15,
+"hair99": 9,
+"cx": 3,
+"pickko": 1
+}
+},
+{
+"date": "2026-07-31",
+"total": 6,
+"by": {
+"knowledge-ops": 1,
+"hair99": 3,
+"cx": 2
+}
+},
+{
+"date": "2026-08-01",
+"total": 1,
+"by": {
+"zaksim": 1
+}
+},
+{
+"date": "2026-08-02",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-08-03",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-08-04",
+"total": 52,
+"by": {
+"knowledge-ops": 5,
+"partners": 1,
+"hair99": 16,
+"cx": 24,
+"pickko": 2,
+"zaksim": 4
+}
+},
+{
+"date": "2026-08-05",
+"total": 35,
+"by": {
+"knowledge-ops": 4,
+"partners": 2,
+"hair99": 5,
+"cx": 20,
+"pickko": 4
+}
+},
+{
+"date": "2026-08-06",
+"total": 64,
+"by": {
+"knowledge-ops": 10,
+"partners": 1,
+"hair99": 25,
+"cx": 20,
+"zaksim": 3,
+"pickko": 5
+}
+},
+{
+"date": "2026-08-07",
+"total": 30,
+"by": {
+"knowledge-ops": 5,
+"partners": 16,
+"hair99": 3,
+"cx": 6
+}
+},
+{
+"date": "2026-08-08",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-08-09",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-08-10",
+"total": 37,
+"by": {
+"knowledge-ops": 3,
+"partners": 1,
+"hair99": 5,
+"cx": 22,
+"pickko": 6
+}
+},
+{
+"date": "2026-08-11",
+"total": 36,
+"by": {
+"knowledge-ops": 11,
+"hair99": 24,
+"cx": 1
+}
+},
+{
+"date": "2026-08-12",
+"total": 107,
+"by": {
+"knowledge-ops": 2,
+"partners": 100,
+"hair99": 3,
+"cx": 1,
+"pickko": 1
+}
+},
+{
+"date": "2026-08-13",
+"total": 156,
+"by": {
+"knowledge-ops": 2,
+"partners": 146,
+"hair99": 4,
+"pickko": 4
+}
+},
+{
+"date": "2026-08-14",
+"total": 76,
+"by": {
+"knowledge-ops": 1,
+"partners": 40,
+"hair99": 35
+}
+},
+{
+"date": "2026-08-15",
+"total": 14,
+"by": {
+"partners": 7,
+"hair99": 2,
+"zaksim": 5
+}
+},
+{
+"date": "2026-08-16",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-08-17",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-08-18",
+"total": 82,
+"by": {
+"knowledge-ops": 14,
+"partners": 19,
+"hair99": 30,
+"pickko": 12,
+"cx": 7
+}
+},
+{
+"date": "2026-08-19",
+"total": 145,
+"by": {
+"knowledge-ops": 39,
+"partners": 25,
+"hair99": 68,
+"pickko": 4,
+"cx": 8,
+"other-company": 1
+}
+},
+{
+"date": "2026-08-20",
+"total": 102,
+"by": {
+"knowledge-ops": 29,
+"partners": 48,
+"hair99": 23,
+"cx": 1,
+"zaksim": 1
+}
+},
+{
+"date": "2026-08-21",
+"total": 76,
+"by": {
+"knowledge-ops": 13,
+"partners": 32,
+"hair99": 31
+}
+},
+{
+"date": "2026-08-22",
+"total": 3,
+"by": {
+"knowledge-ops": 1,
+"hair99": 2
+}
+},
+{
+"date": "2026-08-23",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-08-24",
+"total": 99,
+"by": {
+"knowledge-ops": 30,
+"partners": 32,
+"hair99": 37
+}
+},
+{
+"date": "2026-08-25",
+"total": 98,
+"by": {
+"knowledge-ops": 26,
+"partners": 36,
+"hair99": 29,
+"pickko": 7
+}
+},
+{
+"date": "2026-08-26",
+"total": 97,
+"by": {
+"knowledge-ops": 42,
+"partners": 18,
+"pickko": 19,
+"hair99": 7,
+"cx": 11
+}
+},
+{
+"date": "2026-08-27",
+"total": 106,
+"by": {
+"knowledge-ops": 36,
+"partners": 9,
+"hair99": 13,
+"pickko": 23,
+"cx": 15,
+"zaksim": 10
+}
+},
+{
+"date": "2026-08-28",
+"total": 31,
+"by": {
+"knowledge-ops": 8,
+"partners": 6,
+"hair99": 2,
+"pickko": 7,
+"cx": 8
+}
+},
+{
+"date": "2026-08-29",
+"total": 5,
+"by": {
+"knowledge-ops": 1,
+"partners": 3,
+"cx": 1
+}
+},
+{
+"date": "2026-08-30",
+"total": 4,
+"by": {
+"knowledge-ops": 2,
+"cx": 2
+}
+},
+{
+"date": "2026-08-31",
+"total": 130,
+"by": {
+"knowledge-ops": 56,
+"pickko": 8,
+"partners": 22,
+"hair99": 8,
+"cx": 36
+}
+},
+{
+"date": "2026-09-01",
+"total": 148,
+"by": {
+"knowledge-ops": 52,
+"partners": 1,
+"hair99": 5,
+"cx": 42,
+"internal-platform": 48
+}
+},
+{
+"date": "2026-09-02",
+"total": 192,
+"by": {
+"knowledge-ops": 101,
+"partners": 4,
+"hair99": 9,
+"cx": 48,
+"internal-platform": 30
+}
+},
+{
+"date": "2026-09-03",
+"total": 189,
+"by": {
+"knowledge-ops": 57,
+"partners": 5,
+"pickko": 108,
+"hair99": 14,
+"cx": 2,
+"internal-platform": 3
+}
+},
+{
+"date": "2026-09-04",
+"total": 98,
+"by": {
+"knowledge-ops": 41,
+"pickko": 53,
+"hair99": 1,
+"cx": 2,
+"other-company": 1
+}
+},
+{
+"date": "2026-09-05",
+"total": 1,
+"by": {
+"pickko": 1
+}
+},
+{
+"date": "2026-09-06",
+"total": 12,
+"by": {
+"knowledge-ops": 6,
+"pickko": 5,
+"cx": 1
+}
+},
+{
+"date": "2026-09-07",
+"total": 172,
+"by": {
+"knowledge-ops": 90,
+"partners": 18,
+"pickko": 54,
+"cx": 2,
+"internal-platform": 8
+}
+},
+{
+"date": "2026-09-08",
+"total": 13,
+"by": {
+"knowledge-ops": 8,
+"pickko": 3,
+"cx": 2
+}
+},
+{
+"date": "2026-09-09",
+"total": 203,
+"by": {
+"knowledge-ops": 81,
+"pickko": 80,
+"cx": 1,
+"partners": 39,
+"internal-platform": 2
+}
+},
+{
+"date": "2026-09-10",
+"total": 56,
+"by": {
+"knowledge-ops": 35,
+"pickko": 17,
+"cx": 2,
+"partners": 2
+}
+},
+{
+"date": "2026-09-11",
+"total": 87,
+"by": {
+"knowledge-ops": 52,
+"partners": 4,
+"pickko": 29,
+"cx": 2
+}
+},
+{
+"date": "2026-09-12",
+"total": 4,
+"by": {
+"knowledge-ops": 2,
+"cx": 2
+}
+},
+{
+"date": "2026-09-13",
+"total": 16,
+"by": {
+"knowledge-ops": 13,
+"pickko": 3
+}
+},
+{
+"date": "2026-09-14",
+"total": 180,
+"by": {
+"knowledge-ops": 102,
+"pickko": 74,
+"cx": 1,
+"internal-platform": 3
+}
+},
+{
+"date": "2026-09-15",
+"total": 53,
+"by": {
+"knowledge-ops": 23,
+"partners": 4,
+"pickko": 17,
+"cx": 2,
+"internal-platform": 2,
+"web-sites": 5
+}
+},
+{
+"date": "2026-09-16",
+"total": 103,
+"by": {
+"knowledge-ops": 51,
+"partners": 26,
+"pickko": 24,
+"hair99": 1,
+"cx": 1
+}
+},
+{
+"date": "2026-09-17",
+"total": 75,
+"by": {
+"knowledge-ops": 32,
+"partners": 5,
+"pickko": 37,
+"cx": 1
+}
+},
+{
+"date": "2026-09-18",
+"total": 38,
+"by": {
+"knowledge-ops": 23,
+"pickko": 13,
+"cx": 2
+}
+},
+{
+"date": "2026-09-19",
+"total": 21,
+"by": {
+"knowledge-ops": 14,
+"pickko": 6,
+"cx": 1
+}
+},
+{
+"date": "2026-09-20",
+"total": 55,
+"by": {
+"knowledge-ops": 35,
+"pickko": 18,
+"cx": 2
+}
+},
+{
+"date": "2026-09-21",
+"total": 316,
+"by": {
+"knowledge-ops": 176,
+"partners": 56,
+"pickko": 68,
+"hair99": 3,
+"cx": 4,
+"internal-platform": 9
+}
+},
+{
+"date": "2026-09-22",
+"total": 151,
+"by": {
+"knowledge-ops": 67,
+"pickko": 61,
+"cx": 7,
+"partners": 16
+}
+},
+{
+"date": "2026-09-23",
+"total": 250,
+"by": {
+"knowledge-ops": 93,
+"pickko": 91,
+"partners": 46,
+"cx": 18,
+"internal-platform": 2
+}
+},
+{
+"date": "2026-09-24",
+"total": 73,
+"by": {
+"knowledge-ops": 27,
+"partners": 14,
+"pickko": 30,
+"cx": 2
+}
+},
+{
+"date": "2026-09-25",
+"total": 32,
+"by": {
+"knowledge-ops": 5,
+"partners": 6,
+"pickko": 20,
+"cx": 1
+}
+},
+{
+"date": "2026-09-26",
+"total": 36,
+"by": {
+"knowledge-ops": 12,
+"pickko": 18,
+"cx": 1,
+"partners": 5
+}
+},
+{
+"date": "2026-09-27",
+"total": 205,
+"by": {
+"knowledge-ops": 61,
+"pickko": 108,
+"cx": 5,
+"partners": 31
+}
+},
+{
+"date": "2026-09-28",
+"total": 317,
+"by": {
+"knowledge-ops": 81,
+"pickko": 86,
+"internal-platform": 50,
+"cx": 36,
+"partners": 43,
+"web-sites": 21
+}
+},
+{
+"date": "2026-09-29",
+"total": 435,
+"by": {
+"knowledge-ops": 88,
+"pickko": 35,
+"internal-platform": 170,
+"cx": 20,
+"fleet": 55,
+"partners": 51,
+"web-sites": 16
+}
+},
+{
+"date": "2026-09-30",
+"total": 478,
+"by": {
+"knowledge-ops": 129,
+"pickko": 41,
+"internal-platform": 164,
+"cx": 7,
+"fleet": 66,
+"partners": 46,
+"web-sites": 13,
+"zaksim": 12
+}
+},
+{
+"date": "2026-10-01",
+"total": 586,
+"by": {
+"knowledge-ops": 156,
+"pickko": 147,
+"internal-platform": 181,
+"cx": 50,
+"fleet": 33,
+"partners": 4,
+"web-sites": 15
+}
+},
+{
+"date": "2026-10-02",
+"total": 167,
+"by": {
+"knowledge-ops": 44,
+"pickko": 40,
+"internal-platform": 82,
+"cx": 1
+}
+},
+{
+"date": "2026-10-03",
+"total": 167,
+"by": {
+"knowledge-ops": 65,
+"pickko": 44,
+"internal-platform": 49,
+"cx": 2,
+"partners": 5,
+"web-sites": 2
+}
+},
+{
+"date": "2026-10-04",
+"total": 198,
+"by": {
+"knowledge-ops": 54,
+"pickko": 19,
+"internal-platform": 124,
+"cx": 1
+}
+},
+{
+"date": "2026-10-05",
+"total": 159,
+"by": {
+"knowledge-ops": 45,
+"pickko": 34,
+"internal-platform": 74,
+"cx": 3,
+"fleet": 3
+}
+},
+{
+"date": "2026-10-06",
+"total": 358,
+"by": {
+"knowledge-ops": 200,
+"pickko": 118,
+"internal-platform": 13,
+"cx": 23,
+"fleet": 3,
+"partners": 1
+}
+},
+{
+"date": "2026-10-07",
+"total": 764,
+"by": {
+"knowledge-ops": 329,
+"pickko": 339,
+"internal-platform": 56,
+"cx": 4,
+"fleet": 36
+}
+},
+{
+"date": "2026-10-08",
+"total": 369,
+"by": {
+"knowledge-ops": 157,
+"pickko": 153,
+"internal-platform": 34,
+"hair99": 8,
+"fleet": 14,
+"cx": 2,
+"partners": 1
+}
+},
+{
+"date": "2026-10-09",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-10-10",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-10-11",
+"total": 0,
+"by": {}
+},
+{
+"date": "2026-10-12",
+"total": 618,
+"by": {
+"knowledge-ops": 247,
+"pickko": 172,
+"internal-platform": 14,
+"hair99": 42,
+"cx": 45,
+"fleet": 31,
+"partners": 66,
+"other-company": 1
+}
+},
+{
+"date": "2026-10-13",
+"total": 570,
+"by": {
+"knowledge-ops": 223,
+"pickko": 219,
+"hair99": 37,
+"cx": 72,
+"fleet": 14,
+"partners": 5
+}
+},
+{
+"date": "2026-10-14",
+"total": 298,
+"by": {
+"knowledge-ops": 157,
+"pickko": 93,
+"cx": 48
+}
+},
+{
+"date": "2026-10-15",
+"total": 527,
+"by": {
+"knowledge-ops": 272,
+"pickko": 197,
+"cx": 56,
+"fleet": 2
+}
+},
+{
+"date": "2026-10-16",
+"total": 297,
+"by": {
+"knowledge-ops": 113,
+"pickko": 168,
+"cx": 16
+}
+},
+{
+"date": "2026-10-17",
+"total": 82,
+"by": {
+"knowledge-ops": 21,
+"pickko": 61
+}
+},
+{
+"date": "2026-10-18",
+"total": 120,
+"by": {
+"knowledge-ops": 42,
+"pickko": 77,
+"cx": 1
+}
+},
+{
+"date": "2026-10-19",
+"total": 350,
+"by": {
+"knowledge-ops": 180,
+"pickko": 120,
+"hair99": 11,
+"cx": 39
+}
+},
+{
+"date": "2026-10-20",
+"total": 272,
+"by": {
+"knowledge-ops": 116,
+"pickko": 94,
+"cx": 62
+}
+},
+{
+"date": "2026-10-21",
+"total": 24,
+"by": {
+"knowledge-ops": 12,
+"cx": 12
+}
+},
+{
+"date": "2026-10-22",
+"total": 213,
+"by": {
+"knowledge-ops": 108,
+"pickko": 95,
+"cx": 10
+}
+},
+{
+"date": "2026-10-23",
+"total": 36,
+"by": {
+"knowledge-ops": 26,
+"pickko": 7,
+"cx": 2,
+"fleet": 1
+}
+}
+]
+}
