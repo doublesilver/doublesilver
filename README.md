@@ -839,4 +839,4 @@ Groq Llama-3 분류 · Celery 비동기 큐 · S3 업로드 · JWT + RBAC.
 [^perf]: 성능·정합성 수치는 해당 작업의 전후 실측·대조 기록에서 옮겼습니다.
 [^grass]: 개인 GitHub 계정(doublesilver) 기여 그래프 기준.
 
-<!-- Last Updated 자동 갱신: 2026-10-23 -->
+<!-- Last Updated 자동 갱신: 2026-10-26 -->
