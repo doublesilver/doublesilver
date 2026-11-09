@@ -1,7 +1,6 @@
 name: Profile Visuals
 
-# 스네이크·3D 잔디·통계 카드를 한 작업에서 만들어 output 브랜치에 한 번만 올린다.
-# (예전엔 스네이크와 통계가 같은 브랜치를 따로 덮어써서 매일 통계 이미지가 잠시 사라졌다)
+# 개인 GitHub 통계·언어 카드를 만들어 output 브랜치에 올린다.
 on:
   schedule:
     - cron: "40 15 * * *" # 매일 KST 00:40
@@ -19,21 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-
-      - name: Snake
-        uses: Platane/snk@v3.5.0
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#0077B6&color_dots=#dff3fb,#90e0ef,#00b4d8,#0077b6,#023e8a
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00B4D8&color_dots=#161b22,#0a3d5c,#0077b6,#00b4d8,#90e0ef
-
-      - name: 3D contribution calendar
-        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-          SETTING_JSON: .github/profile-3d-settings.json
 
       - name: Metrics — overview
         uses: lowlighter/metrics@latest
@@ -64,29 +48,14 @@ jobs:
           output_action: none
           filename: metrics-languages.svg
 
-      - name: Metrics — isometric calendar
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          user: ${{ github.repository_owner }}
-          template: classic
-          base: ""
-          config_timezone: Asia/Seoul
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-          output_action: none
-          filename: metrics-isocalendar.svg
-
       - name: Collect
         run: |
-          # snk 컨테이너가 dist 를 root 로 만들어 두므로 복사·소유권 정리는 sudo 로 한다
+          # metrics 액션이 결과를 root 소유로 남기므로 복사·소유권 정리는 sudo 로 한다
           sudo mkdir -p dist
-          sudo cp profile-3d-contrib/*.svg /metrics_renders/*.svg dist/
+          sudo cp /metrics_renders/*.svg dist/
           sudo chown -R "$(id -u):$(id -g)" dist
-          # 무한 루프(3D 잔디 무지개 색 순환 등)가 프로필 화면을 계속 다시 그려 렉을 만든다 — 15초쯤 돌고 멈추게.
-          # 스네이크는 한 바퀴(약 55초, 잔디 수에 따라 바뀜)를 중간에 끊으면 반쯤 먹은 잔디로 멈추므로 딱 한 바퀴(--loop 0)만 돌게 둔다.
-          python3 -I scripts/profile_assets/settle.py dist/profile-3d-*.svg dist/metrics-*.svg
-          python3 -I scripts/profile_assets/settle.py --loop 0 dist/github-contribution-grid-snake*.svg
+          # 무한 루프 애니메이션이 프로필 화면을 계속 다시 그려 렉을 만든다 — 15초쯤 돌고 멈추게
+          python3 -I scripts/profile_assets/settle.py dist/*.svg
           ls -la dist
 
       - name: Publish to output branch
