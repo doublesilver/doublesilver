@@ -92,7 +92,7 @@ def _background(T, theme):
     blobs = [
         (160, 30, 340, "#00B4D8", 0.75, 0),
         (720, 420, 380, "#14B8A6", 0.55, -6000),
-        (1180, 60, 320, "#7C3AED", 0.75 if dark else 0.5, -10000),
+        (1180, 60, 320, "#5B7083", 0.75 if dark else 0.5, -10000),
     ]
     dfs, out = [], []
     for i, (cx, cy, r, c, k, dl) in enumerate(blobs):

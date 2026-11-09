@@ -19,7 +19,7 @@ def _background(T, theme):
     dark = T["dark"]
     blobs = [
         # (cx, cy, r, color, opacity 배수, 지연)
-        (1090, 40, 360, "#7C3AED", 0.85 if dark else 0.55, 0),
+        (1090, 40, 360, "#5B7083", 0.85 if dark else 0.55, 0),
         (190, 400, 420, "#00B4D8", 0.75, -5000),
         (720, 470, 380, "#14B8A6", 0.6, -9000),
         (1180, 360, 260, "#0077B6", 0.7, -3000),
@@ -56,7 +56,7 @@ def _orb(T):
     dfs = [
         D.radial_gradient(f"{p}-halo", [(0, "#00B4D8", 0.42 if dark else 0.22), (0.45, "#0077B6", 0.16 if dark else 0.08), (1, "#0077B6", 0)]),
         D.radial_gradient(f"{p}-core", [(0, "#FFFFFF", 1), (0.28, "#CFF6FF", 1), (0.6, "#00B4D8", 1), (1, "#0077B6", 0.95)], fx=0.38, fy=0.34),
-        D.linear_gradient(f"{p}-ring", [(0, c2, 0.95), (0.5, "#7C3AED", 0.75), (1, c3, 0.95)], 0, 0, 1, 1),
+        D.linear_gradient(f"{p}-ring", [(0, c2, 0.95), (0.5, "#5B7083", 0.75), (1, c3, 0.95)], 0, 0, 1, 1),
         D.linear_gradient(f"{p}-ring2", [(0, c3, 0.9), (1, c1, 0.25)], 0, 0, 1, 1),
         D.linear_gradient(f"{p}-ray", [(0, c2, 0.0), (0.5, c2, 0.55 if dark else 0.45), (1, c3, 0.15)], 0, 0, 1, 0),
         D.glow_filter(f"{p}-glow", 6, 0.9 if dark else 0.5),
@@ -154,7 +154,7 @@ def _text(T, data):
     nw = D.text_width(name, ns, "latin", 800, -1.5)
     name_txt = D.text(TEXT_X, base_y, name, ns, None, 800, "latin", ls=-1.5)
     per = 520
-    dfs.append(D.flow_gradient(f"{p}-name-flow", T["grad_text"] + ([T["accent3"]] if dark else ["#4F46E5"]), per))
+    dfs.append(D.flow_gradient(f"{p}-name-flow", [T["text"], T["text"]], per))
     dfs.append(f'<clipPath id="{p}-name-clip">{name_txt}</clipPath>')
     css.append(D.flow_css(p, per))
     band_w = 140

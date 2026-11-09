@@ -1,4 +1,9 @@
-# Deep Ocean Neon — 프로필 에셋 디자인 시스템
+# Deep Ocean — 프로필 에셋 디자인 시스템
+
+> **톤 원칙(2026-11 개정):** 네온 글로우·블러 번짐·오로라 덩어리·별자리 파티클·반짝이(✦)·보라색·그라디언트 글자는
+> "AI 가 만든 템플릿" 티를 내서 쓰지 않는다. 그래서 `glow_filter` 는 원본을 그대로 통과시키고, `blur_filter` 는 대상을
+> 보이지 않게 하고, `constellation` 은 빈 문자열을, `sparkle_path` 는 작은 원을 돌려준다. 새 모듈에서도 이 헬퍼들에
+> 기대지 말고, 청색·청록 계열 단색 면과 선으로 그린다. 아래 표의 옛 설명은 호환을 위해 남긴 이름의 출처다.
 
 이 문서만 읽고 같은 스타일의 에셋 모듈을 만들 수 있게 쓴다. 토큰·헬퍼 구현은 `design.py`, 기준 예시는 `hero.py`(풍부한 예)와 `divider.py`(최소 예).
 
@@ -37,7 +42,7 @@ def render(theme, data) -> str:         # theme: 'dark' | 'light'
 | `accent` | #00B4D8 | #0077B6 | 주 강조(시안/오션) |
 | `accent2` | #2DD4BF | #0D9488 | 보조 강조(틸) |
 | `accent3` | #A78BFA | #7C3AED | AI 포인트(바이올렛) — 글자용 |
-| `violet` | #7C3AED | #7C3AED | AI 포인트 — 면·선 |
+| `violet` | #5B7083 | #4A6178 | 보조 포인트(청회색 — 보라는 쓰지 않는다) |
 | `coral` | #FF6F61 | #E8574B | 경고·하이라이트(아주 조금) |
 | `grad` | 0077B6→00B4D8→14B8A6 | 동일 | 면·선 브랜드 그라디언트 |
 | `grad_text` | 90E0EF→00B4D8→2DD4BF | 005F92→0096C7→0D9488 | 큰 글자 그라디언트(대비 확보) |
@@ -45,7 +50,7 @@ def render(theme, data) -> str:         # theme: 'dark' | 'light'
 | `border` `border_hi` | 시안 16%·34% | #D0E7F5 · #9FCBE6 | 테두리 |
 | `surface` `surface_hi` | 시안 4.5%·9% | 흰색 72%·92% | 반투명 면 |
 | `particle` `line` | #90E0EF · #48CAE4 | #0077B6 · #0096C7 | 점·연결선 |
-| `glow_opacity` `blob_opacity` | 0.85 · 0.38 | 0.35 · 0.20 | 라이트는 빛 효과를 약하게 |
+| `glow_opacity` `blob_opacity` | 0.85 · 0 | 0.35 · 0 | 라이트는 빛 효과를 약하게 |
 | `dark` | True | False | 분기용 |
 
 `D.PALETTE` 에 원색(abyss, ocean, cyan, aqua, teal, mint, violet, coral)이 있다. 라이트에서 #14B8A6·#90E0EF 를 **글자색**으로 쓰지 말 것(흰 바탕 대비 부족) — `accent2`·`grad_text` 사용.
@@ -70,13 +75,13 @@ def render(theme, data) -> str:         # theme: 'dark' | 'light'
 | `eyebrow(P, x, y, label, theme, variant, icon, max_w=, anchor=)` → `(svg, w)` | 섹션 머리 위 모노 라벨 칩(높이 32, 맥동 점 또는 ✦). 제목 있는 섹션(hero·skyline·domains·orchestra)은 전부 이걸 쓴다. 자간 포함 폭으로 말줄임. |
 | `chips_row(x, y, labels, theme, max_w, size, cls_fn=)` | 한 줄 칩 배치. 넘치면 16까지 축소 → `+N` 접기. `cls_fn(i)->(class, style)` 로 순차 팝. |
 | `linear_gradient` · `radial_gradient` | stops: `['#hex', ...]` 균등 또는 `[(offset, '#hex', opacity), ...]`. |
-| `glow_filter(id, std, strength)` | 네온 글로우(원본 + 흐린 사본). 작은 점·선·글자에. |
+| `glow_filter(id, std, strength)` | (개정) 효과 없음 — 원본 그대로. 예전 참조 호환용. |
 | `blur_filter(id, std)` · `shadow_filter(id, theme)` | 번짐 · 카드 그림자. |
 | `dot_grid_pattern(id, theme)` | 점 격자 패턴(배경 질감). |
 | `fade_mask(id, w, h, axis)` | 양 끝이 사라지는 마스크(선·띠). |
-| `constellation(P, theme, box, count, seed, dim_box=)` | 별자리 네트워크(노드 반짝임 + 연결선 숨쉬기). 글자 자리는 `dim_box` 로 흐리게. |
+| `constellation(P, theme, box, count, seed, dim_box=)` | (개정) 빈 문자열 — 별자리 배경은 그리지 않는다. |
 | `wave_path` · `wave_line` | 주기 물결(채움/윗선). `translate_loop_css` 로 한 주기만큼 흘린다. |
-| `sparkle_path(cx, cy, r)` | 4갈래 반짝임(✦) — AI 포인트 아이콘. |
+| `sparkle_path(cx, cy, r)` | (개정) 같은 자리에 작은 원. 반짝이 기호는 쓰지 않는다. |
 | `odometer(P, x, y, "12,439", size, fill, clip_id=)` | 슬롯머신처럼 굴러 멈추는 숫자. 숫자마다 70ms 엇갈림. |
 | `typewriter(P, uid, x, y, s, size, fill)` → `(svg, css, end_ms)` | 한 글자씩 타이핑 + 따라오는 깜빡 커서. |
 | `rng(seed)` | 결정적 난수(빌드마다 같은 그림). |
@@ -111,9 +116,9 @@ def render(theme, data) -> str:         # theme: 'dark' | 'light'
 
 - **모든 에셋 viewBox 폭 1280**(README 에서 같은 0.65배로 줄어 반경·선·글자 배율이 맞는다). 카드 반경 20, 선 1.5.
 - 바깥 여백: 그리드형(stats·domains·terminal)은 56, 텍스트 블록은 x=72(hero·timeline·orchestra). 칩과 제목은 같은 x 에서 시작.
-- 제목 있는 섹션의 머리 = `eyebrow` 칩(y≈34) + 그라디언트 제목(`grad_text`, 800, 44~46, 다크는 블러 글로우 0.45) + 빛 스침 8s.
+- 제목 있는 섹션의 머리 = `eyebrow` 칩(y≈34) + 단색 제목(`grad_text` 는 단색 토큰, 800, 44~46).
 - 배경 장식은 `<g clip-path="url(#P-clip)">` 안(`card_clip`), 글자는 그 밖(위)에.
-- 순서: card → 배경(오로라 덩어리·격자·별자리) → 주 시각 요소 → 글자 → 칩.
+- 순서: card → 배경(격자 정도만) → 주 시각 요소 → 글자 → 칩.
 - 라이트 테마는 다크를 밝게 뒤집은 게 아니라 **빛 효과를 줄이고 대비를 올린다**: 글로우 약하게(`glow_opacity`), 글자색은 진한 토큰.
 
 ## 8. 검수 절차(필수)
