@@ -126,7 +126,7 @@ def _mcol(T, model):
     if t == "opus":
         return T["accent3"]
     if t == "fable":
-        return D.mix("#A78BFA", "#FF6F61", 0.5) if dark else D.mix("#7C3AED", "#E8574B", 0.42)
+        return D.mix("#8FA9BF", "#FF6F61", 0.5) if dark else D.mix("#5B7083", "#E8574B", 0.42)
     return T["accent"]
 
 
@@ -217,7 +217,7 @@ def _sync(name, delay_s=START):
 def _background(T, theme):
     p = P
     dark = T["dark"]
-    blobs = [(CX, CY - 20, 360, "#7C3AED", 0.75 if dark else 0.45, 0),
+    blobs = [(CX, CY - 20, 360, "#5B7083", 0.75 if dark else 0.45, 0),
              (1160, 120, 320, "#00B4D8", 0.7, -4000),
              (110, 560, 340, "#14B8A6", 0.6, -8000),
              (1120, 560, 260, "#0077B6", 0.7, -2000)]
@@ -370,9 +370,9 @@ def _coordinator(T, cfg, sched):
     p = P
     dark = T["dark"]
     dfs = [
-        D.radial_gradient(f"{p}-c-halo", [(0, "#7C3AED", 0.45 if dark else 0.22), (0.5, "#00B4D8", 0.16 if dark else 0.08), (1, "#00B4D8", 0)]),
-        D.radial_gradient(f"{p}-c-core", [(0, "#FFFFFF", 1), (0.25, "#E4DAFF", 1), (0.62, "#8B5CF6", 1), (1, "#0077B6", 1)], fx=0.36, fy=0.32),
-        D.linear_gradient(f"{p}-c-ring", [(0, "#00B4D8", 0.95), (0.5, "#7C3AED", 0.85), (1, "#2DD4BF", 0.95)], 0, 0, 1, 1),
+        D.radial_gradient(f"{p}-c-halo", [(0, "#5B7083", 0.45 if dark else 0.22), (0.5, "#00B4D8", 0.16 if dark else 0.08), (1, "#00B4D8", 0)]),
+        D.radial_gradient(f"{p}-c-core", [(0, "#E8F6FC", 1), (0.5, "#00B4D8", 1), (1, "#0077B6", 1)], fx=0.36, fy=0.32),
+        D.linear_gradient(f"{p}-c-ring", [(0, "#00B4D8", 0.95), (0.5, "#5B7083", 0.85), (1, "#2DD4BF", 0.95)], 0, 0, 1, 1),
     ]
     css = D.keyframes(p, "k-ripple", "0%{transform:scale(.75);opacity:.7}100%{transform:scale(2.3);opacity:0}")
     # 출발 순간 한 번 크게 퍼지는 디스패치 파동
@@ -574,7 +574,7 @@ def _header(T, cfg):
     # 흐르는 그라디언트 글자 + 가끔 스치는 빛띠(글자 모양 clipPath 안)
     per = 460
     title_txt = D.text(72, ty, title, ts, None, 800, fam_t, ls=-0.5)
-    dfs.append(D.flow_gradient(f"{p}-title-flow", T["grad_text"] + [T["accent3"]], per))
+    dfs.append(D.flow_gradient(f"{p}-title-flow", [T["text"], T["text"]], per))
     dfs.append(f'<clipPath id="{p}-title-clip">{title_txt}</clipPath>')
     dfs.append(D.linear_gradient(f"{p}-shine", [(0, T["shine"], 0), (0.5, T["shine"], T["shine_opacity"]), (1, T["shine"], 0)]))
     css = D.flow_css(p, per) + D.shimmer_css(p, "k-shine", 72 - 170, 72 + tw + 80, 0.3)

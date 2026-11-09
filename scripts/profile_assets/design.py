@@ -1,4 +1,4 @@
-"""'Deep Ocean Neon' 디자인 시스템 — 토큰과 SVG 헬퍼.
+"""'Deep Ocean' 디자인 시스템(글로우·보라·파티클을 걷어낸 차분한 판) — 토큰과 SVG 헬퍼.
 
 모든 에셋 모듈은 여기 있는 토큰·헬퍼만으로 그린다. 규칙과 예시는 DESIGN.md.
 
@@ -78,17 +78,17 @@ _TOKENS = {
         "muted": "#6E879D",
         "accent": "#00B4D8",
         "accent2": "#2DD4BF",
-        "accent3": "#A78BFA",
-        "violet": "#7C3AED",
+        "accent3": "#8FA9BF",
+        "violet": "#5B7083",
         "coral": "#FF6F61",
         "ok": "#2DD4BF",
         "grad": ["#0077B6", "#00B4D8", "#14B8A6"],
-        "grad_text": ["#90E0EF", "#00B4D8", "#2DD4BF"],
-        "grad_ai": ["#00B4D8", "#7C3AED"],
+        "grad_text": ["#E8F6FC", "#E8F6FC", "#E8F6FC"],
+        "grad_ai": ["#0077B6", "#00B4D8"],
         "particle": "#90E0EF",
         "line": "#48CAE4",
         "glow_opacity": 0.85,
-        "blob_opacity": 0.38,
+        "blob_opacity": 0.0,
         "grid_opacity": 0.07,
         "shine": "#FFFFFF",
         "shine_opacity": 0.55,
@@ -109,17 +109,17 @@ _TOKENS = {
         "muted": "#7A90A4",
         "accent": "#0077B6",
         "accent2": "#0D9488",
-        "accent3": "#7C3AED",
-        "violet": "#7C3AED",
+        "accent3": "#4A6178",
+        "violet": "#4A6178",
         "coral": "#E8574B",
         "ok": "#0D9488",
         "grad": ["#0077B6", "#00B4D8", "#14B8A6"],
-        "grad_text": ["#005F92", "#0096C7", "#0D9488"],
-        "grad_ai": ["#0077B6", "#7C3AED"],
+        "grad_text": ["#0B1F33", "#0B1F33", "#0B1F33"],
+        "grad_ai": ["#0077B6", "#0096C7"],
         "particle": "#0077B6",
         "line": "#0096C7",
         "glow_opacity": 0.35,
-        "blob_opacity": 0.20,
+        "blob_opacity": 0.0,
         "grid_opacity": 0.10,
         "shine": "#FFFFFF",
         "shine_opacity": 0.85,
@@ -395,23 +395,20 @@ def flow_gradient(id, colors, period=640, vertical=False) -> str:
 
 
 def glow_filter(id, std=6, strength=1.0) -> str:
-    """원본 + 흐린 사본을 겹치는 네온 글로우. strength 는 흐린 층 불투명도."""
-    return (f'<filter id="{id}" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">'
-            f'<feGaussianBlur in="SourceGraphic" stdDeviation="{n(std)}" result="b"/>'
-            f'<feComponentTransfer in="b" result="bb"><feFuncA type="linear" slope="{n(strength)}"/></feComponentTransfer>'
-            f'<feMerge><feMergeNode in="bb"/><feMergeNode in="SourceGraphic"/></feMerge></filter>')
+    """예전 네온 글로우 자리. 번짐이 'AI 가 만든 그림' 티를 내서 원본을 그대로 통과시킨다
+    (모듈들이 filter="url(#..-glow)" 를 계속 참조하므로 id 는 남긴다)."""
+    return f'<filter id="{id}"><feMerge><feMergeNode in="SourceGraphic"/></feMerge></filter>'
 
 
 def blur_filter(id, std=20) -> str:
-    """순수 블러(오로라 덩어리·빛 번짐)."""
-    return (f'<filter id="{id}" x="-50%" y="-50%" width="200%" height="200%">'
-            f'<feGaussianBlur stdDeviation="{n(std)}"/></filter>')
+    """예전 블러 자리(오로라 덩어리·글자 번짐 사본). 장식 전용이라 아예 보이지 않게 한다."""
+    return f'<filter id="{id}"><feComponentTransfer><feFuncA type="table" tableValues="0 0"/></feComponentTransfer></filter>'
 
 
 def shadow_filter(id, theme, dy=8, std=14) -> str:
     """카드 그림자. 다크는 시안 기운, 라이트는 남색 그림자."""
-    color = "#00B4D8" if theme == "dark" else "#0B3A5C"
-    op = 0.18 if theme == "dark" else 0.12
+    color = "#000000" if theme == "dark" else "#0B3A5C"
+    op = 0.30 if theme == "dark" else 0.08
     return (f'<filter id="{id}" x="-20%" y="-20%" width="140%" height="160%">'
             f'<feDropShadow dx="0" dy="{n(dy)}" stdDeviation="{n(std)}" flood-color="{color}" flood-opacity="{n(op)}"/></filter>')
 
@@ -449,7 +446,7 @@ def card(w, h, theme, prefix, r=20, x=0, y=0, glow_edge=True) -> str:
     fill = linear_gradient(f"{p}-card-fill", [T["bg"], T["bg2"], T["bg3"]], 0, 0, 1, 1)
     if glow_edge:
         if T["dark"]:
-            st = [(0, "#90E0EF", 0.38), (0.35, "#00B4D8", 0.14), (0.7, "#7C3AED", 0.18), (1, "#14B8A6", 0.34)]
+            st = [(0, "#90E0EF", 0.22), (1, "#90E0EF", 0.12)]
         else:
             st = [(0, "#9FCBE6", 1), (0.5, "#D0E7F5", 1), (1, "#8FD3C9", 1)]
         stroke_grad = linear_gradient(f"{p}-card-stroke", st, 0, 0, 1, 1)
@@ -774,12 +771,10 @@ def typewriter(prefix, uid, x, y, s, size, fill, family="mono", weight=500, star
 
 
 def sparkle_path(cx, cy, r, waist=0.22) -> str:
-    """4갈래 반짝임(✦) path d."""
-    w = r * waist
-    return (f"M{n(cx)} {n(cy - r)}C{n(cx + w * 0.4)} {n(cy - w)} {n(cx + w)} {n(cy - w * 0.4)} {n(cx + r)} {n(cy)}"
-            f"C{n(cx + w)} {n(cy + w * 0.4)} {n(cx + w * 0.4)} {n(cy + w)} {n(cx)} {n(cy + r)}"
-            f"C{n(cx - w * 0.4)} {n(cy + w)} {n(cx - w)} {n(cy + w * 0.4)} {n(cx - r)} {n(cy)}"
-            f"C{n(cx - w)} {n(cy - w * 0.4)} {n(cx - w * 0.4)} {n(cy - w)} {n(cx)} {n(cy - r)}Z")
+    """예전 4갈래 반짝이(✦) 자리. 반짝이가 AI 상투 기호라 같은 자리에 작은 원을 그린다."""
+    rr = r * 0.45
+    return (f"M{n(cx - rr)} {n(cy)}a{n(rr)} {n(rr)} 0 1 0 {n(rr * 2)} 0"
+            f"a{n(rr)} {n(rr)} 0 1 0 {n(-rr * 2)} 0Z")
 
 
 def wave_path(width, period, amp, base_y, bottom, phase=0.0, samples_per_period=16) -> str:
@@ -817,6 +812,7 @@ def constellation(prefix, theme, box, count=30, seed=7, link_dist=160, max_links
                   dim=0.35, r_range=(1.1, 2.6)) -> str:
     """별자리 파티클 네트워크(노드 반짝임 + 연결선 맥동). box=(x,y,w,h).
     dim_box 영역(글자 자리) 안 노드는 dim 배로 흐리게."""
+    return ""  # 별자리 파티클 배경은 AI 템플릿 장식이라 그리지 않는다
     T = tokens(theme)
     R = rng(seed)
     bx, by, bw, bh = box

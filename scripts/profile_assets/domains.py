@@ -35,9 +35,9 @@ ICON_COLORS = {
     "scissors": ("#90E0EF", "#0891B2"),
     "network": ("#38BDF8", "#005F92"),
     "shield": ("#5EEAD4", "#0E7490"),
-    "brain": ("#A78BFA", "#7C3AED"),
+    "brain": ("#8FA9BF", "#5B7083"),
 }
-FALLBACK_COLORS = [("#00B4D8", "#0077B6"), ("#2DD4BF", "#0D9488"), ("#48CAE4", "#0284C7"), ("#A78BFA", "#7C3AED")]
+FALLBACK_COLORS = [("#00B4D8", "#0077B6"), ("#2DD4BF", "#0D9488"), ("#48CAE4", "#0284C7"), ("#8FA9BF", "#5B7083")]
 
 
 # ---------------------------------------------------------------------------
@@ -294,7 +294,7 @@ def _background(T, theme):
     dark = T["dark"]
     dfs, out = [], []
     blobs = [
-        (1120, 70, 360, "#7C3AED", 0.7 if dark else 0.45, -2000),
+        (1120, 70, 360, "#5B7083", 0.7 if dark else 0.45, -2000),
         (140, 640, 420, "#00B4D8", 0.7, -7000),
         (700, 360, 460, "#14B8A6", 0.45, -11000),
         (1240, 620, 300, "#0077B6", 0.7, -4000),
@@ -440,7 +440,7 @@ def _tile(T, theme, data, dom, idx, slot, total, color, dfs_acc):
     o.append(f'<rect x="0.75" y="0.75" width="{D.n(tw - 1.5)}" height="{D.n(th - 1.5)}" rx="{TR}" fill="url(#{uid}-tint)"/>')
 
     if big:
-        dfs_acc.append(D.linear_gradient(f"{uid}-edge", [(0, color, 0.85 if dark else 0.7), (0.45, color, 0.12), (0.75, "#7C3AED", 0.15), (1, "#2DD4BF", 0.7 if dark else 0.55)], 0, 0, 1, 1))
+        dfs_acc.append(D.linear_gradient(f"{uid}-edge", [(0, color, 0.85 if dark else 0.7), (0.45, color, 0.12), (0.75, "#5B7083", 0.15), (1, "#2DD4BF", 0.7 if dark else 0.55)], 0, 0, 1, 1))
         o.append(f'<rect x="0.75" y="0.75" width="{D.n(tw - 1.5)}" height="{D.n(th - 1.5)}" rx="{TR}" stroke="url(#{uid}-edge)" stroke-width="1.5" class="{p}-breathe" style="animation-duration:5s"/>')
 
     # 아이콘 배지
@@ -611,8 +611,8 @@ def render(theme, data):
     slots = _tile_slots(len(domains))
     tiles = "".join(_tile(T, theme, data, d, i, slots[i], total, colors[i], tile_defs) for i, d in enumerate(domains))
 
-    comet_stops = ([(0, "#90E0EF"), (0.3, "#00B4D8"), (0.6, "#2DD4BF"), (0.85, "#A78BFA"), (1, "#90E0EF")] if dark
-                   else [(0, "#0077B6"), (0.35, "#00B4D8"), (0.65, "#14B8A6"), (1, "#7C3AED")])
+    comet_stops = ([(0, "#90E0EF"), (0.3, "#00B4D8"), (0.6, "#2DD4BF"), (0.85, "#8FA9BF"), (1, "#90E0EF")] if dark
+                   else [(0, "#0077B6"), (0.35, "#00B4D8"), (0.65, "#14B8A6"), (1, "#5B7083")])
     common = D.defs(
         D.card_clip(f"{p}-clip", W, H),
         D.glass_defs(theme, p),

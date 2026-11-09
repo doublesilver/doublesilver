@@ -277,11 +277,9 @@ def render(theme, data):
     # 가로 직선은 bbox 높이가 0 이라 기본(objectBoundingBox) 필터 영역이 비어 아무것도 안 그려진다
     # → 선 전용 필터는 userSpaceOnUse 영역으로 따로 만든다
     fr = f'filterUnits="userSpaceOnUse" x="0" y="{D.n(ay - 40)}" width="{W}" height="80"'
-    line_filters = (f'<filter id="{p}-soft" {fr}><feGaussianBlur stdDeviation="9"/></filter>'
+    line_filters = (f'<filter id="{p}-soft" {fr}><feComponentTransfer><feFuncA type="table" tableValues="0 0"/></feComponentTransfer></filter>'
                     f'<filter id="{p}-glow-line" {fr} color-interpolation-filters="sRGB">'
-                    f'<feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="b"/>'
-                    f'<feComponentTransfer in="b" result="bb"><feFuncA type="linear" slope="{1.2 if T["dark"] else 0.7}"/></feComponentTransfer>'
-                    f'<feMerge><feMergeNode in="bb"/><feMergeNode in="SourceGraphic"/></feMerge></filter>')
+                    f'<feMerge><feMergeNode in="SourceGraphic"/></feMerge></filter>')  # 번짐 없이 원본만
     bot_y0 = ay + BOT_GAP                      # 아래 카드 윗변
 
     # ── defs ───────────────────────────────────────────────
@@ -291,8 +289,8 @@ def render(theme, data):
         D.card_clip(f"{p}-clip", W, H),
         D.glass_defs(theme, p),
         D.linear_gradient(f"{p}-line", line_cols, x_start, 0, x_now, 0, units="userSpaceOnUse"),
-        D.linear_gradient(f"{p}-wave", [(0, c1, 1), (0.55, c2, 1), (1, "#7C3AED", 1)], x_start, 0, x_now, 0, units="userSpaceOnUse"),
-        D.linear_gradient(f"{p}-wave-l", [(0, D.mix(c1, "#003A5C", 0.28), 1), (0.55, D.mix(c2, "#003A5C", 0.28), 1), (1, D.mix("#7C3AED", "#003A5C", 0.2), 1)],
+        D.linear_gradient(f"{p}-wave", [(0, c1, 1), (0.55, c2, 1), (1, "#5B7083", 1)], x_start, 0, x_now, 0, units="userSpaceOnUse"),
+        D.linear_gradient(f"{p}-wave-l", [(0, D.mix(c1, "#003A5C", 0.28), 1), (0.55, D.mix(c2, "#003A5C", 0.28), 1), (1, D.mix("#5B7083", "#003A5C", 0.2), 1)],
                           x_start, 0, x_now, 0, units="userSpaceOnUse"),
         D.linear_gradient(f"{p}-future", [(0, T["accent"], 0.7), (1, T["accent"], 0)], x_now, 0, X_FUTURE, 0, units="userSpaceOnUse"),
         D.linear_gradient(f"{p}-beam", [(0, T["coral"], 0), (0.5, T["coral"], 0.55 if dark else 0.35), (1, T["coral"], 0)], 0, 0, 0, 1),
@@ -309,7 +307,7 @@ def render(theme, data):
 
     # ── 배경 ───────────────────────────────────────────────
     bg = [f'<g clip-path="url(#{p}-clip)">']
-    blobs = [(180, 470, 380, "#00B4D8", 0.7, 0), (700, -60, 360, "#7C3AED", 0.55 if dark else 0.4, -6000),
+    blobs = [(180, 470, 380, "#00B4D8", 0.7, 0), (700, -60, 360, "#5B7083", 0.55 if dark else 0.4, -6000),
              (1180, 420, 340, "#14B8A6", 0.6, -10000), (1020, 40, 260, "#0077B6", 0.6, -3000)]
     for i, (cx, cy, r, c, k, dl) in enumerate(blobs):
         gid = f"{p}-blob{i}"
