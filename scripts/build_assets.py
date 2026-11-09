@@ -26,6 +26,7 @@ sys.path.insert(0, str(SCRIPTS))
 
 from profile_assets import MODULES  # noqa: E402
 from profile_assets.design import ANIM_CLASSES  # noqa: E402
+from profile_assets.settle import leftover_loops, settle  # noqa: E402
 
 THEMES = ("dark", "light")
 SIZE_LIMIT_KB = {"skyline": 250}
@@ -102,6 +103,9 @@ def check_svg(name: str, theme: str, svg: str) -> tuple[list[str], list[str], di
     animated = count_animated(root, name)
     if animated > MAX_ANIMATED:
         errors.append(f"애니메이션 요소 {animated}개 > {MAX_ANIMATED}")
+    loops = leftover_loops(svg)
+    if loops:
+        errors.append(f"무한 루프 {loops}개 남음 — 프로필 화면이 계속 다시 그려져 렉이 걸린다(settle.py)")
     if "prefers-reduced-motion" not in svg:
         warns.append("prefers-reduced-motion 규칙 없음")
     info.update(kb=kb, limit=limit, animated=animated, elements=sum(1 for _ in root.iter()))
@@ -151,7 +155,7 @@ def main(argv=None) -> int:
         for theme in THEMES:
             label = f"{name}-{theme}"
             try:
-                svg = mod.render(theme, data)
+                svg = settle(mod.render(theme, data))
             except Exception as e:
                 print(f"[실패] {label}: render 예외 — {e}")
                 traceback.print_exc()

@@ -83,6 +83,10 @@ jobs:
           sudo mkdir -p dist
           sudo cp profile-3d-contrib/*.svg /metrics_renders/*.svg dist/
           sudo chown -R "$(id -u):$(id -g)" dist
+          # 무한 루프(3D 잔디 무지개 색 순환 등)가 프로필 화면을 계속 다시 그려 렉을 만든다 — 15초쯤 돌고 멈추게.
+          # 스네이크는 한 바퀴(약 55초, 잔디 수에 따라 바뀜)를 중간에 끊으면 반쯤 먹은 잔디로 멈추므로 딱 한 바퀴(--loop 0)만 돌게 둔다.
+          python3 -I scripts/profile_assets/settle.py dist/profile-3d-*.svg dist/metrics-*.svg
+          python3 -I scripts/profile_assets/settle.py --loop 0 dist/github-contribution-grid-snake*.svg
           ls -la dist
 
       - name: Publish to output branch
